@@ -2,7 +2,7 @@ export default {
 		title:'Paracas Reserve and Islas Ballestas',
 		subtitle: 'The jewel on the crown of the Ruta del Sol of Peru, the Paracas National Wildlife Reserve and the Islas Ballestas is considered the Galapagos of Peru.',
 		description: 'Paracas is certainly Peru\'s most interesting coastal asset and is situated ideally as the traveler\'s jumping point to other destinations by virtue of the newly completed international airport just minutes away. The Humboldt current from the antarctic brings a fantastic wealth of marine life abundance which places Paracas as on of the most important stops for travelers enjoying Peru.',
-		url_image: 'images/tours/paracas/ballestas14_portrait.jpg',
+		url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210558/SAS/IslasBallestas1.jpg',
 		tab_title: "Paracas",
 		tours:[
 			{
@@ -10,7 +10,7 @@ export default {
 				title:'Islas Ballestas',
 				shortTitle:'Islas Ballestas',
 				subtitle:'The Islas Ballestas (Crossbow Islands) are Paracas\'s premier wildlife attraction. You\'ll find many exotic species of birds and marine life, some unique to Peru.',
-				url_image:'images/tours/paracas/paracas_03_t.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210558/SAS/Paracas.jpg',
 				description:`We meet at our office and escort you to Paracas dock. This two-hour round-trip tour of Peru's most famous islands lets you enjoy magnificent rocks formations sculpted by nature and is home of Humboldt penguins, south Americans sea lions and a multitude of marine birds. Services also available in First and Private classes.All yacht tours include a trained, certified, registered yatchsman and crewman/guide onboard. Our yacht services are insured and registered with all appropriate agencies as mandated by law.`,
 				yacht: 'yacht.png',
 				gallery: [

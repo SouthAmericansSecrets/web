@@ -116,7 +116,7 @@ Al volver de las islas, usted tendrá tiempo para relajarse y caminar los alrede
 						form_title: 'Pachacamac',
 						shortTitle:'Pachacamac',
 						subtitle:'Una experiencia arqueológica y mística inolvidable',
-						url_image:'images/tours/lima_pachamac.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551209926/SAS/Pachacamac.jpg',
 						description:`Una visita guiada por la inmensa y espléndida ciudadela arqueológica de Pachacamac, el templo de la deidad, y Pachacamac se cree que es el creador del universo, divinidad adorada por los antiguos pueblos andinos. Lugar sagrado y ceremonial que data de los comienzos del cristianismo, donde miles de peregrinos llegaban para presentar sus ofrendas y consultar al Oráculo de Pachacamac que veía el pasado, el futuro y el destino de cualquier hombre, mujer o niño.
 Comprende templos piramidales y recintos edificados por varias culturas precolombinas y luego por los Incas. Destacan el templo de Pachacamac, el adoratorio del Dios Sol y el Palacio de las Mujeres Escogidas, las Vírgenes del sol. En el museo del sitio de encontrar un ídolo del dios Pachacamac, que era invisible para los profanos, su visión era reservada para los sumos sacerdotes, quienes le guardaban, adoraban y eran intérpretes del oráculo divino en el pasado. Un lugar sagrado, el templo fue considerado como parte del eje místico del mundo.`,
 						additionalData:
@@ -151,7 +151,7 @@ Comprende templos piramidales y recintos edificados por varias culturas precolom
 						shortTitle:'Caral',
 						form_title:'Caral',
 						subtitle:'La civilización más antigua de América',
-						url_image:'images/tours/lima_caral.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551209926/SAS/Caral.jpg',
 						description:`Para los que tienen un gran interés en la arqueología y la aventura, el viaje se embarca desde Lima a través de la Ruta del Sol (a 2 horas) en ruta hacia la civilización Central Norte.
 También conocido como Caral o Caral-Supe, la civilización Central Norte era una sociedad precolombina compleja casi 30 principales centros de población en lo que hoy se conoce como la región del Norte Chico del centro-norte de Perú costera.
 La civilización más antigua conocida en América y uno de los seis sitios donde la civilización se originó por separado en el mundo antiguo, Caral floreció entre los años 3000 AC y 1800 AC. Su nombre derivado, Caral-Supe, nace de Caral, en el valle de Supe, un sitio grande y estudiado de manera significativa en el Norte Chico. Sociedad compleja en Norte Chico que emergió sólo un milenio después de Sumeria, en Mesopotamia, alrededor del mismo tiempo que las pirámides del antiguo Egipto. Norte Chico es anterior a la mesoaméricana olmeca por casi dos milenios.
@@ -240,7 +240,7 @@ El Museo de Oro del Perú también muestra una valiosa colección de armas antig
 						shortTitle:'Museos de Lima',
 						form_title:'Museos de Lima',
 						subtitle:'Disfrute de las visitas a Museo Larco y Museo Arqueológico en una gira que comprende mansiones coloniales que albergan probablemente el mejor oro, cerámica, textiles y las colecciones de arte de América del Sur.',
-						url_image:'images/tours/lima_museum_1.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551209991/SAS/MuseoLarco.jpg',
 						description:`Estos dos museos muestran las mejores piezas y colecciones del arte precolombino del Perú y el Nuevo Mundo, y son, sin duda, los museos más importantes de Sudamérica.
 El Museo de Larco está ubicado en una residencia colonial única que data del siglo 17 y construído sobre una pirámide del siglo octavo. Este fabuloso Museo cuenta con una exquisita colección de oro y plata peruana de los antiguos Incas. También alberga un salón prehispánico arte erótico. Sus más de 45,000 piezas arqueológicas clasificadas por reconocidos especialistas y estudiosos, tours por principales museos del mundo con regularidad. Larco es uno de los pocos museos del mundo que abren sus bóvedas al público y puede presumir de que presenta la mayor colección privada de arte precolombino peruano que existe en el mundo.
 El Museo Nacional de Arqueología, Antropología e Historia, también ubicado en una antigua mansión colonial, fue la residencia de los virreyes del Perú, luego de sus libertadores. En esto, el museo más grandioso de Perú, se encuentra el monumento Estela Raymondi y el Obelisco Tello - piezas de piedra tallada que data del período Formativo hace más de tres mil años. El museo también cuenta con la mayor colección textil, que muestra tejidos que van desde el período pre-cerámico hasta la época Inca y una importante colección de metales del Perú antiguo. Y la impresionante Sala Tawantinsuyo ilustra cien años de Imperio Inca a través de modelos virtuales y recreaciones.`,
@@ -279,7 +279,7 @@ El Museo Nacional de Arqueología, Antropología e Historia, también ubicado en
 						shortTitle:'Vida nocturna en Lima',
 						form_title:'Tour Nocturno Lima',
 						subtitle:'La única excursión que incluye un espectáculo y cena buffet.',
-						url_image:'images/tours/lima_larcomar.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210015/SAS/LimaNocturna.jpg',
 						description:`Descubra la belleza de nuestra capital, visitando sus principales atracciones y monumentos arquitectónicos hermosamente iluminados bajo la tranquilidad y el embrujo de la noche Limeña. Después, disfrute de una magnífica cena buffet y un espectacular show peruano.
 Como broche de oro, se le ofrecerá la mejor Cena Show preparada y presentada especialmente para usted en el renombrado restaurante Junius. Allí, usted explorará lo mejor del Perú. Podrá disfrutar de una variedad de exquisita cocina, que incluye una selección de las expresiones culinarias de costa y sierra, seguido por un show musical peruano y el folklore, haciendo del restaurante Junius uno de los mejores restaurantes del Perú, tanto por su cocina y su cultura.
 Además, usted puede comprar productos locales de alta calidad, tales como pisco, chocolates, vinos, joyas, cerámica y libros, entre otros artículos. Basado en un concepto moderno y cosmopolita, el restaurante Junius es calificado como el "mejor restaurante peruano". También el restaurante Gastón y Astrid son de los mejores en Sudamérica.`,

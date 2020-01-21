@@ -8,7 +8,7 @@ export default {
 	date:'2014-04-20',
 	image_class: 'image-vertical',
 	tour: 'toursnasca.html',
-	url_image: 'images/articles/monte_sierpe_portrait.jpg',
+	url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576720662/SAS/MONTE_SIERPE_4.jpg.jpg',
 	description:'The Avenida de los Hoyos, a geoglyph like the Nazca lines consisting of a series of large basin-like potholes along a mountain ridge, appears to slither up the slope for miles.',
 	content:
 		`Getting to Nasca to see the Nasca lines once used to be a complicated and time-consuming effort. Unless you chartered your own private flight from Lima, public access was limited to mostly car or bus which is very long (7-8 hour one-way) trip from Lima.

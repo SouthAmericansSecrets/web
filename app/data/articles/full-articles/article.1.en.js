@@ -8,7 +8,7 @@ export default {
 	date:'2014-02-26',
 	image_class: 'image-vertical',
 	tour: 'toursnasca.html',
-	url_image: 'images/articles/nazca_spider.jpg',
+	url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576693805/SAS/nazca_lines.jpg',
 	description:'Getting to Nasca to see the Nasca lines once used to be a complicated and time-consuming effort. Unless you chartered your own private flight from Lima, public access was limited to mostly car or bus which is very long (7-8 hour one-way) trip from Lima.',
 	content:
 			`Getting to Nasca to see the Nasca lines once used to be a complicated and time-consuming effort. Unless you chartered your own private flight from Lima, public access was limited to mostly car or bus which is very long (7-8 hour one-way) trip from Lima.

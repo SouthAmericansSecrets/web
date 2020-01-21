@@ -1,6 +1,6 @@
 <div class="row container-article article article-detail">
-	<div class="col-md-12">
-        <img class="article-detail-image {{data.image_class}}" style="background-image:url({{data.url_image}});" alt="" width="100%">
+	<div class="col-md-12 no-padding">
+        <img class="article-detail-image {{data.image_class}}" src="{{data.url_image}}" alt="" width="100%">
     <div class="article-title article-detail-title">
         {{data.title}}
     </div>
@@ -54,9 +54,9 @@
 
 {% for item in data.blocks %}
 <div class="row container-article article article-detail">
-	<div class="col-md-12">
+	<div class="col-md-12 no-padding">
         {% if item.url_image %}
-            <img class="article-detail-image {{item.image_class}}" style="background-image:url({{item.url_image}});" alt="" width="100%">
+            <img class="article-detail-image {{item.image_class}}" src="{{item.url_image}}" alt="" width="100%">
         {% endif %}
         {% if item.blockquote %}
 		<blockquote class="article-blockquote article-detail-blockquote">

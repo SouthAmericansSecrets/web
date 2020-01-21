@@ -8,7 +8,7 @@ export default [
 		blockquote: `"Una construcción de esta magnitud en la cresta de la montaña debió haber requerido equipos de arquitectos, ingenieros y geólogos del antiguo Perú."`,
 		author: 'Cameron Metreaud',
 		date: 'Noviembre 06, 2017',
-		url_image: 'images/tours/cuzco/machu_picchu_main.png',
+		url_image: 'https://res.cloudinary.com/dvv4qgnka/image/upload/v1575700725/vistas-de-la-imponente.jpg',
 		tour: 'tourscuzco.html#machu-picchu-day-trip',
 		id: '4',
 		link: 'article-detail.html?id=4'
@@ -20,7 +20,7 @@ export default [
 		blockquoteAuthor:"",
 		author:'Rein Petersen',
 		date:'2014-02-26',
-		url_image: 'images/articles/nazca_spider.jpg',
+		url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576693805/SAS/nazca_lines.jpg',
 		description:'Llegar a Nasca para ver estas enigmáticas líneas de Nazca solía ser un esfuerzo grande y requería mucho tiempo. Al menos que usted quisiera rentar su propio vuelo privado desde Lima, el acceso al público se limitaba en su mayoría en coche o autobús, que tomaba mucho tiempo (12-14 horas ida y vuelta) viaje desde Lima.',
 		content:
 				`Llegar a Nasca para ver estas enigmáticas líneas de Nazca solía ser un esfuerzo grande y requería mucho tiempo. Al menos que usted quisiera rentar su propio vuelo privado desde Lima, el acceso al público se limitaba en su mayoría en coche o autobús, que tomaba mucho tiempo (12-14 horas ida y vuelta) viaje desde Lima.
@@ -38,7 +38,7 @@ export default [
 		blockquoteAuthor:"",
 		author:'Rein Petersen',
 		date:'2014-04-20',
-		url_image: 'images/articles/monte_sierpe_portrait.jpg',
+		url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576720662/SAS/MONTE_SIERPE_4.jpg.jpg',
 		description:'La ‘Avenida de los Hoyos’, es un geoglifo que consiste en una serie de grandes Hoyos en la cuenca, como tallados en tierra seca dura por la cresta que separa dos valles secos, que parece deslizarse en la pendiente y por millas.',
 		content:`“Lo que parece ser una serpiente es en realidad la antigua deidad Q'hoa. Él era el siervo ... del dios del agua ... y fue utilizado en los rituales ... con respecto a la lluvia”.`,
 		id: '2',
@@ -54,7 +54,7 @@ export default [
 		blockquoteAuthor:"",
 		author:'Rein Petersen',
 		date:'February 22, 2014',
-		url_image: 'images/articles/guano_collectors_1_portrait.jpg',
+		url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576693942/SAS/guano_colector.jpg',
 		link: 'article-detail.html?id=3',
 		tour: 'toursparacas.html'
 	}

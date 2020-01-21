@@ -1,0 +1,269 @@
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: rgba(255,255,255, .3); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgba(0,0,0,.5); 
+	border-radius: 2em;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgba(0,0,0,.7); 
+  }
+
+div#cruise-content {
+	display: grid;
+	/* grid-template-columns: 2fr 1fr; */
+	border-radius: 4px;
+	min-height: 488px;
+	overflow: hidden;
+	position: relative;
+	/* max-width: 60vw; */
+	padding-right: 360px;
+	row-gap: 15px;
+}
+
+
+.cruise-itinerary > img {
+	height: auto;
+	width: 350px;
+	/* position: absolute; */
+	position: absolute;
+	right: 0;
+}
+
+.items {
+	position: relative;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	padding: 15px 20px;
+	height: 100%;
+	max-height: 94vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.itinerary-item {
+	transition: all .3s ease;
+	cursor: default;
+}
+
+.itinerary-item:hover {
+	transform: scale(1.1, 1.1);
+	color: orange;
+}
+
+.items > h3 {
+	color: orange;
+}
+
+.cuise-body {
+	position: relative;
+	display: grid;
+	grid-template-columns: 2fr 350px;
+	background-color: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.reservation-btn {
+	width: 90%;
+	position: absolute;
+	bottom: 10px;
+	display: grid;
+	grid-auto-flow: column;
+}
+
+.reservation-btn > button {
+	justify-self: center;
+	outline: none;
+	user-select: none;
+}
+
+.img-item > img {
+	max-width: 350px;
+	height: auto;
+	margin: auto;
+}
+
+.img-item {
+	opacity: 1;
+	transition: opacity .3s ease-in;
+}
+
+.cruise-data {
+	position: relative;
+	padding: 10px;
+	padding-bottom: 4em;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.img-presentation {
+	display: grid;
+	position: relative;
+	max-width: 350px;
+	height: fit-content;
+	place-self: center;
+}
+
+.cruise-data > p {
+	padding: 0 15px;
+	text-align: justify;
+	color: #666;
+
+}
+
+.cruise-itinerary {
+	position: absolute;
+	right: 0;
+	width: 350px;
+	height: 541px;
+}
+
+.cruise-data > h3, .cruise-data > h4 {
+	color: orange;
+}
+
+.tour-itinerary {
+	display: block;
+	float: left;
+	/* padding: 1.5em 0; */
+	/* margin-bottom: 3em; */
+	/* max-height: 451px; */
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.itienrary-item {
+	float: left;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.item-time {
+	color: orange;
+	width: 25%;
+	text-align: center;
+	background-color: rgba(0,0,0,.6);
+	border-radius: 1em;
+	padding: 5px 5px;
+}
+
+.item-desc {
+	width: 60%;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	font-size: 15px;
+	line-height: 22px;
+	padding: 1em;
+	position: relative;
+	background-color: rgba(0,0,0,.4);
+}
+
+.item-desc > .item-border {
+	background: orange;
+	width: 3px;
+	position: absolute;
+	top: 0;
+	bottom: -1px;
+	left: -8%;
+}
+
+.item-desc > .item-border::after {
+	content: "";
+	background: #ffffff;
+	border: 3px solid orange;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: -5px;
+	width: 13px;
+	height: 13px;
+}
+
+.item-desc > .item-border::before {
+	content: "";
+	background: orange;
+	border-radius: 50%;
+	height: 9px;
+	width: 9px;
+	position: absolute;
+	top: -8px;
+	left: -3px;
+}
+
+.itienrary-item:last-child > .item-desc {
+	border-bottom: none;
+}
+
+.tour-include {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+}
+
+.include-item {
+	color: #666;
+	font-style: italic;
+}
+
+.include-type {
+	position: relative;
+	padding-bottom: 2em;
+}
+
+.include-price {
+	position: absolute;
+	bottom: 0;
+}
+
+.include-price {
+	color: orange;
+}
+
+@media screen 
+  and (max-width: 500px) 
+  and (orientation: portrait) {
+	div#cruise-content {
+		grid-template-columns: unset;
+		padding-right: 0;
+	}
+
+	.cuise-body {
+		grid-template-columns: unset;
+		max-width: 88vw;
+	}
+	.cruise-data {
+		padding-bottom: 40px;
+	}
+	.img-item > img {
+		max-width: 279px;
+	}
+	.items {
+		max-height: 472px;
+	}
+	.cruise-itinerary {
+		position: relative;
+	}
+	.reservation-btn > button {
+		font-size: 16px !important;
+	}
+}

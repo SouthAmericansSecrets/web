@@ -45,7 +45,7 @@ export default {
 				title:'Manglares de Tumbes',
 				shortTitle: 'Manglares de Tumbes',
 				subtitle:'El Santuario Nacional de Manglares está protegido por SERNANP para prevenir la contaminación, la deforestación y preservar la tradición.',
-				url_image:'images/tours/north/tumbes_manglares_3_portrait.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551325447/SAS/Tumbes.jpg',
 				description:`Los manglares de Tumbes son un refugio para el cocodrilo americano, vulnerables a la extinción y muchas otras especies de peces, mamíferos y aves. Viajar por los canales en canoa o kayak permite a los visitantes una experiencia de primer plano con esta maravilla de la naturaleza.
 				Después de una visita al bosque seco para disfrutar del almuerzo y luego, una visita a la pintoresca aldea de pescadores de Puerto Pizarro, donde el Ministerio de Pesquería del Perú alberga un zoológico con protección de las aves migratorias y más de 300 cocodrilos. Los manglares y Puerto Pizarro son lugares maravillosos para visitar durante todo el año`,
 				additionalData: {
@@ -84,7 +84,7 @@ export default {
 				title:'Huaca de la Luna',
 				shortTitle:'Huaca de la Luna',
 				subtitle:`Huaca de la Luna fue construida por la antigua cultura Moche y era su centro ceremonial.`,
-				url_image:'images/tours/north/templemoon_1_t.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551325447/SAS/Temple_of_the_moon.jpg',
 				description:`A diferencia de la Huaca del Sol, que fue destruído en su mayoría, la Huaca de la Luna quedó en gran parte intacto y ha proporcionado la información arqueológica. En el templo hay muchos murales que representan a menudo el dios "Ayapec" (todo lo sabe). La evidencia ha demostrado que el sitio era también un templo de enterramiento de los sacerdotes de alto estatus y gobernantes y como la ubicación donde se realizaban sacrificios humanos.`,
 				additionalData: {
 					include: [
@@ -143,8 +143,8 @@ export default {
 						'Lleve una botella de agua.',
 					],
 					price: {
-						currency:'$',
-						ammount:0,
+						currency:'',
+						ammount:'(Consultar Precio)',
 						data:[
 							 'Se requiere un mínimo de 2 participantes'
 						]

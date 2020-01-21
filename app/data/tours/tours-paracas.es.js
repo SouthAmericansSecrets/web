@@ -2,7 +2,7 @@ export default {
 		title:'Reserva de Paracas e Islas Ballestas',
 		subtitle: 'La joya de la Ruta del sur del Perú, la Reserva Nacional de Vida Silvestre de Paracas y las Islas Ballestas es considerada el Galápagos del Perú.',
 		description: 'Paracas es sin duda es el más interesante de los atractivos de la costa sur del Perú y está situado idealmente como punto de partida de los viajeros a otros destinos en virtud del puerto maritimo San Martin y aeropuerto internacional recién terminado. La corriente de Humboldt desde antártida trae una fantástica riqueza marina que pone a Paracas como uno de los sitios mas ricos de flora y fauna marina de la costa peruana. Es la parada mas importante para los viajeros amantes de la naturaleza ademas Paracas esta considerado refugio de pinguinos de Humbold, delfines de nariz de botella, lobos marinos sudamericanos, ballenas y es el lugar de alimentacion de aves migratorios de la red emisferica.',
-		url_image: 'images/tours/paracas/ballestas14_portrait.jpg',
+		url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210558/SAS/IslasBallestas1.jpg',
 		tab_title: "Paracas",
 		tours:[
 			{
@@ -10,7 +10,7 @@ export default {
 				title:'Islas Ballestas',
 				shortTitle:'Islas Ballestas',
 				subtitle:'Las Islas Ballestas es el principal atractivo de Paracas. Usted encontrará innumberables especies exóticas de aves y vida marina, algunas únicas en el Perú',
-				url_image:'images/tours/paracas/paracas_03_t.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210558/SAS/Paracas.jpg',
 				description:`Visitar estas islas es como participar de la filmacion de un documental de Nacional Geografic. Organizamos tours guiados desde nuestra oficina en Paracas, ó lo recojemos desde su hotel y nuestro personal le acompañará hasta el muelle de Paracas. Este viaje de ida y vuelta es de dos horas a las islas más famosas del Perú, le permite disfrutar de magníficas formaciones de rocas esculpidas por la naturaleza y es el hogar de los pingüinos de Humboldt, lobos marinos sudamericanos y una multitud de aves marinas. Estos servicios tambien estan disponibles en primera clase y servicios privados.`,
 				yacht: 'yacht.png',
 				gallery: [

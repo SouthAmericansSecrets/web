@@ -2,7 +2,7 @@ export default {
 		title:'Peruvian Rainforests',
 		subtitle: `The Peruvian Amazon jungle is one of the most biologically diverse areas on Earth`,
 		description: `As a nation, Peru has the largest number of bird species in the world and the third largest number of mammals; 44% of bird species and 63% of mammal species inhabit the Peruvian Amazon. Peru also has a very high number of species of butterflies, orchids, and other organisms`,
-		url_image: 'images/tours/tambopata/iquitos_3_t.jpg',
+		url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551324785/SAS/Reservas.jpg',
 		tab_title: "Tours Iquitos",
 		tours:[
 			{
@@ -10,7 +10,7 @@ export default {
 				title:'Tambopata Reserve',
 				shortTitle:'Tambopata Reserve',
 				subtitle:'Featured in National Geographic magazine, Tambopata Research Center is probably the most remote rainforest lodges in South America and offers adventurers an authentic jungle experience',
-				url_image:'images/tours/tambopata/macaw_1_portrait.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551324785/SAS/Tambopata.jpg',
 				description:`The Tambopata River is one of the exclusive habitat of birds and mammals. Flora in the national reserve is fairly typical of the southwest Amazon Basin. The Heath River and surrounding plains are a unique ecosystem in Peru. The pampas are periodically flooded, and small groves of trees with varied plant life grow in isolated clumps on the plain.
 If you are looking for a more in depth Amazon experience, then the Tambopata Research Center suits you best. After staying the first night at Refugio Amazonas, reach on of the largest known macaw claylick on the second day of your trip and explore the trails of the Tambopata Research Center in the heart of the Tambopata National Reserve.`,
 				additionalData: {
@@ -44,7 +44,7 @@ If you are looking for a more in depth Amazon experience, then the Tambopata Res
 				title:'Manu Reserve',
 				shortTitle:'Manu Reserve',
 				subtitle:'The famous Salkantay trek to Machu Picchu is named among the top 25 best excursions in the world by National Geographic Adventure Travel Magazine.',
-				url_image:'images/tours/tambopata/salkantay_1_portrait.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551324785/SAS/Manu_Reserve.jpg',
 				description:`The Salkantay Trek is an ancient and remote footpath located in the same region as the Inca Trail where snowcapped mountains collide with lush tropical rain forests.`,
 				additionalData: {
 					include: [

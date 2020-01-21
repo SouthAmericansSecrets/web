@@ -1,13 +1,14 @@
 export default {
     title:'MACHU PICCHU & THE SECRET VALLEY OF INCAS 7 days Touring',
     subtitle: ``,
-    description: `Are you willing to take the adventure? Get ready to have the time of your life in the heart of Machu Picchu and discover a place that speaks through its ruins and village markets.`,
-    url_image: 'images/tours/cuzco/machu_picchu_main.png',
+    description: `Have everything ready to enjoy the best experience of your life in the heart of Machu Picchu and discover a magical place among its ruins and markets.
+Let's live the adventure!`,
+    url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551464345/SAS/Machupichu_Package1.jpg',
     tab_title: "Packages",
     packages:[
         {
             id:'package-machupicchu',
-            title:'MACHU PICCHU & THE SECRET VALLEY OF INCAS 7 days Touring',
+            title:'ENJOY THE ADVENTURE OF KNOWING MACHU PICCHU & THE SECRET VALLEY OF THE INCAS',
             shortTitle: 'MACHU PICCHU & THE SECRET VALLEY',
             subtitle:'',
             url_image:'images/tours/cuzco/machu_picchu_3_t.jpg',
@@ -53,7 +54,7 @@ export default {
                         ['Day 3',	'Sacred Valley, hikes through the Pisac ruins or town of Maras and finally the Ollantaytambo ruins.'],
                         ['Day 4', 'Ollantaytambo Ruins | Train to Machu Picchu'],
                         ['Day 5', 'Free Day at Machu Picchu | Return to Cusco'],
-                        ['Day 6', 'Eplore Cusco, You are free to explore the city on your own or guided'],
+                        ['Day 6', 'Explore Cusco, You are free to explore the city on your own or guided'],
                         ['Day 7', 'Fly Lima | Return home']
                     ]
                 }

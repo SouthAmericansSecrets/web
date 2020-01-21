@@ -31,7 +31,9 @@ module.exports = {
 		messageboard: './app/scripts/messageboard.js',
 		about: './app/scripts/about.js',
 		messageboard_settings: './app/scripts/messageboard-settings.js',
-		reservations: './app/scripts/reservations.js'
+		reservations: './app/scripts/reservations.js',
+		splash: './app/scripts/splash-ad.js',
+		cruises: './app/scripts/cruises.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'build'),

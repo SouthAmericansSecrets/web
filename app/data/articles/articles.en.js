@@ -8,7 +8,7 @@ export default [
 		blockquote: `"A construction project of this magnitude in such a lofty location would require teams of architects, engineers, and geologists of ancient Peru."`,
 		author: 'Cameron Metreaud',
 		date: 'November 06, 2017',
-		url_image: 'images/tours/cuzco/machu_picchu_main.png',
+		url_image: 'https://res.cloudinary.com/dvv4qgnka/image/upload/v1575700725/vistas-de-la-imponente.jpg',
 		tour: 'tourscuzco.html#machu-picchu-day-trip',
 		id: '4',
 		link: 'article-detail.html?id=4'
@@ -20,7 +20,7 @@ export default [
 		blockquoteAuthor:"",
 		author:'Rein Petersen',
 		date:'2014-02-26',
-		url_image: 'images/articles/nazca_spider.jpg',
+		url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576693805/SAS/nazca_lines.jpg',
 		description:'Getting to Nasca to see the Nasca lines once used to be a complicated and time-consuming effort. Unless you chartered your own private flight from Lima, public access was limited to mostly car or bus which is very long (7-8 hour one-way) trip from Lima.',
 		content:
 				`Getting to Nasca to see the Nasca lines once used to be a complicated and time-consuming effort. Unless you chartered your own private flight from Lima, public access was limited to mostly car or bus which is very long (7-8 hour one-way) trip from Lima.
@@ -37,7 +37,7 @@ export default [
 		blockquoteAuthor:"",
 		author:'Rein Petersen',
 		date:'2014-04-20',
-		url_image: 'images/articles/monte_sierpe_portrait.jpg',
+		url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576720662/SAS/MONTE_SIERPE_4.jpg.jpg',
 		description:'The Avenida de los Hoyos, a geoglyph like the Nazca lines consisting of a series of large basin-like potholes along a mountain ridge, appears to slither up the slope for miles.',
 		content:
 				`Getting to Nasca to see the Nasca lines once used to be a complicated and time-consuming effort. Unless you chartered your own private flight from Lima, public access was limited to mostly car or bus which is very long (7-8 hour one-way) trip from Lima.
@@ -56,7 +56,7 @@ export default [
 		blockquoteAuthor:"",
 		author:'Rein Petersen',
 		date:'February 22, 2014',
-		url_image: 'images/articles/guano_collectors_1_portrait.jpg',
+		url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576693942/SAS/guano_colector.jpg',
 		link: 'article-detail.html?id=3',
 		tour: 'toursparacas.html'
 	}

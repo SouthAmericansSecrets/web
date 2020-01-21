@@ -2,7 +2,7 @@ export default {
 		title:'Puno',
 		subtitle: `On the shores of Lake Titicaca, the world's highest navigable lake, lies the city of Puno.`,
 		description: `Strewn with colonial churches built to evangelize the natives by conquistadors, the original inhabitants belong to the Aymaras ethnic group whose physical features have adapted to the cold of the highland. Their chests have evolved with great lung capacity and their blood rich in red blood cells - genetically they have unusually high endurance.Today, Puno is known as the "Capital folklórica del Perú" (folkloric capital) due to it's wealth of artistic and cultural expressions, particularly dance. They are most notable during the celebrations of the Feast of the "Virgen de la Candelaria" and the regional competition of the Autochthonous Dances.`,
-		url_image: 'images/tours/puno/puno_2.jpg',
+		url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551324336/SAS/Puno.jpg',
 		tab_title: "Tours Puno",
 		tours:[
 			{
@@ -10,7 +10,7 @@ export default {
 				title:'Lake Titicaca Boat Tour',
 				shortTitle:'Lake Titicaca Boat Tour',
 				subtitle:'Discover the world of the Aymara and Quechua in the Uros and Taquile Island, where the people retain their ancient customs, co-existing with nature, religion, agriculture and art that continues as it did in the times of the Incas.',
-				url_image:'images/tours/puno/uros_1_portrait.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551324472/SAS/Boat_trip.jpg',
 				description:`Puno's access to Lake Titicaca is surrounded by 41 floating islands. To this day, the Uros people maintain and live on these man-made islands, depending on them for survival and attracting many tourists.
 The Uros Islands are an archepelago of 48 floating islands inhabited by the Amaryu people. The tortora reeds used to construct the islands are collected from the shallow waters of Lake Titicaca.
 Lake Titicaca is the world's highest navigable lake at 3,812 m above sea level. By volume of water, it is also the largest lake in South America.

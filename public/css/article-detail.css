@@ -81,21 +81,24 @@
 .read-more {
     float: right;
     text-align: right;
-    font-size: 12px;
+    font-size: 14px;
     height: 25px;
-    padding: 0 2px 0 2px;
+    padding: 0 5px 0 5px;
     margin-top: 2px;
     margin-left: 2px;
     border-style: solid;
     border-width: 1px;
-    border-radius: 2px;
-
-    color: white !important;
-    background-color: #f58220;
-    border-color: #e9af25 !important;
+    border-radius: 4px;
+    color: orange !important;
+    background-color: #fff;
+    border-color: orange;
+    transition: all .2s ease-out;
 }
+
 .read-more:hover, .read-more:active {
-    background-color: #c36009 !important
+    background-color: orange !important;
+    color: #fff !important;
+    transform: scale(1.1, 1.1);
 }
 .read-more:focus {outline:0;}
 .read-more a:link, .read-more a:visited, .read-more a:active {

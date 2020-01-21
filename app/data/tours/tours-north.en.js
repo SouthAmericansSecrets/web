@@ -45,7 +45,7 @@ export default {
 				title:'Mangroves in Tumbes',
 				shortTitle: 'Mangroves in Tumbes',
 				subtitle:'The National Mangrove Sanctuary is protected by SERNANP to prevent contamination, deforestation and preserving tradition.',
-				url_image:'images/tours/north/tumbes_manglares_3_portrait.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551325447/SAS/Tumbes.jpg',
 				description:`The Tumbes mangroves (Manglares de Tumbes) are a refuge for the American Crocodile, vulnerable to extinction, and many other species of fish, mammals and birds. Travelling the canals by canoe or kayak allows visitors a close-up experience with this wonder of nature.Afterwards a visit to the dry forest to enjoy lunch then nearby, a visit to the picturesque fishing village of Puerto Pizarro where the Peruvian Ministry of Fisheries hosts a zoo protecting migratory birds and over 300 crocodiles. The mangroves and village of Puerto Pizarro are wonderful places to visit year-round.`,
 				additionalData: {
 					include: [
@@ -84,7 +84,7 @@ export default {
 				title:'Temple of the Moon',
 				shortTitle:'Temple of the Moon',
 				subtitle:`Huaca de la Luna (Temple of the Moon) was built by the ancient Moche culture and was their ceremonial center`,
-				url_image:'images/tours/north/templemoon_1_t.jpg',
+				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551325447/SAS/Temple_of_the_moon.jpg',
 				description:`Unlike Huaca del Sol, which is mostly destroyed, the Huaca de la Luna was left mostly untouched and has provided the most archaeological information. Inside the temple are many murals often depicting the god "Ayapec" (all-knowing). Evidence has shown the site was also a burial temple of high-status priests and rulers and as the location where human sacrifices were made.`,
 				additionalData: {
 					include: [
@@ -146,8 +146,8 @@ export default {
             'Bring a bottle of water.',
 					],
 					price: {
-						currency:'$',
-						ammount:0,
+						currency:'',
+						ammount:'(Consult Price)',
 						data:[
 							 'A minimum of 2 participants are required'
 						]

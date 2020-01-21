@@ -16,15 +16,7 @@ div.share {
 .article-detail div.share {
     float: none
 }
-div.share > button {
-    border-radius: 2px;
-    color: white !important;
-    background-color: #f58220;
-    border-color: #e9af25 !important;
-}
-div.share > button:hover, div.share > button:active {
-    background-color: #c36009 !important
-}
+
 div.share > button:focus {outline:0;}
 .share-blockquote {
     font-size: 20px

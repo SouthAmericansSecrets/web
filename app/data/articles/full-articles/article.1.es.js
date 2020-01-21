@@ -8,7 +8,7 @@ export default {
 	date:'2014-02-26',
 	tour: 'toursnasca.html',
 	image_class: 'image-vertical',
-	url_image: 'images/articles/nazca_spider.jpg',
+	url_image:'https://res.cloudinary.com/dvv4qgnka/image/upload/v1576720662/SAS/MONTE_SIERPE_4.jpg.jpg',
 	description:'Llegar a Nasca para ver estas enigmáticas líneas de Nazca solía ser un esfuerzo grande y requería mucho tiempo. Al menos que usted quisiera rentar su propio vuelo privado desde Lima, el acceso al público se limitaba en su mayoría en coche o autobús, que tomaba mucho tiempo (12-14 horas ida y vuelta) viaje desde Lima.',
 	content:
 			`Llegar a Nasca para ver estas enigmáticas líneas de Nazca solía ser un esfuerzo grande y requería mucho tiempo. A menos que usted quisiera rentar su propio vuelo privado desde Lima, el acceso al público se limitaba en su mayoría en coche o autobús, que tomaba mucho tiempo (12-14 horas ida y vuelta) viaje desde Lima.

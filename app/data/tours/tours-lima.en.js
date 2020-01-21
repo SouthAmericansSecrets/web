@@ -114,7 +114,7 @@ Along the way you will pass the enigmatic "Candelabra" - a famous geoglyph with 
 						shortTitle:'Pachacamac',
 						form_title: 'Pachacamac',
 						subtitle:'A unique archaeological and mystical experience',
-						url_image:'images/tours/lima_pachamac.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551209926/SAS/Pachacamac.jpg',
 						description:`
 						A guided tour of the vast and splendid archaeological citadel of Pachacamac, the temple of the deity, and Pachacamac - believed to be the creator of the universe and a divinity adored by old Andean civilizations. A sacred and ceremonial site dating back to the beginnings of Christianity where thousands of pilgrims converged to pay tribute to and consult the Pachacamac Oracle who they believed could see the past, the future, and the fate of any man, woman, or child.
 The site comprises pyramidal temples and enclosures built by successive pre-Colombian civilizations then finally the Incas. Highlights include the Temple of Pachacamac, the Sun God Shrine, and the Palace of the Chosen Women or Virgins of the Sun. At the site's museum find an idol of the deity Pachacamac, which was invisible to the profane, and was reserved for the high priests who kept, revered, and interpreted the Divine Oracle in old times. A sacred site, the temple was considered to be part of the planet’s mystical axis.`,
@@ -152,7 +152,7 @@ The site comprises pyramidal temples and enclosures built by successive pre-Colo
 						shortTitle:'Caral',
 						form_title: 'Caral',
 						subtitle:'The Oldest Civilization of Americas',
-						url_image:'images/tours/lima_caral.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551209926/SAS/Caral.jpg',
 						description:`
 					 For those with a keen interest in archeology and adventure, the tour embarks from Lima via the Ruta del Sol (just around 2 hours) enroute to discover the Norte Central civilization.
 Also known as Caral or Caral-Supe, the Norte Central civilization was a complex Pre-Columbian society that spanned nearly 30 major population centers in what is now known as the Norte Chico region of north-central coastal Peru.
@@ -238,7 +238,7 @@ On our tour of Peru’s Gold Museum, visitors will admire an awe-inspiring colle
 						shortTitle:'Museums of Lima',
 						form_title: 'Museums of Lima',
 						subtitle:'Enjoy visits to Larco Museum and Archaeological Museum in a tour that comprises breathtaking colonial mansions housing probably the best gold, ceramic, textile, and art collections in South America.',
-						url_image:'images/tours/lima_museum_1.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551209991/SAS/MuseoLarco.jpg',
 						description:`These two museums house incomparable artifacts and collections of pre-Colombian art from Peru and the New World and are, arguably, the most important museums in South America.
 Larco Museum is housed in a unique colonial residence dating back to the 17th century and built atop a pyramid of the 8th century. This fabulous museum includes an exquisite collection of Peruvian gold and silver from the ancient Incas. It also hosts a pre-Hispanic erotic art salon. Its over 45,000 archaeological pieces, classified by renowned specialists and scholars, tour major world museums regularly. Larco is among only a few museums around the world opening their vaults to the public and can boast that it exhibits the largest private collection of pre-Colombian Peruvian art in the world.`,
 						additionalData:
@@ -277,7 +277,7 @@ Larco Museum is housed in a unique colonial residence dating back to the 17th ce
 						form_title: 'Nightlife in Lima',
 						shortTitle:'Nightlife in Lima',
 						subtitle:'The only tour that includes a show and buffet dinner.',
-						url_image:'images/tours/lima_larcomar.t.jpg',
+						url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210015/SAS/LimaNocturna.jpg',
 						description:`Discover the beauty of our capital, visiting the main attractions and architectonic monuments beautifully illuminated under the enchantment and tranquility of nighttime Lima. Afterwards, enjoy a magnificent buffet dinner and spectacular Peruvian show.`,
 						additionalData:
 						{

@@ -1,13 +1,14 @@
 export default {
     title:'MACHU PICCHU & VALLE SECRETO DE LOS INCAS tour de 7 días',
     subtitle: ``,
-    description: `¿Está dispuesto a adentrarse en la aventura? Tenga todo listo para vivir lo mejor de su vida dentro del corazón de Machu Picchu y descubrir un lugar que se expresa entre sus ruinas y mercados.`,
-    url_image: 'images/tours/cuzco/machu_picchu_main.png',
+    description: `Tenga todo listo para disfrutar la mejor experiencia de su vida dentro del corazón de Machu Picchu y descubrir un lugar mágico entre sus ruinas y mercados.
+¡Vamos a vivir la aventura!`,
+    url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551464345/SAS/Machupichu_Package1.jpg',
     tab_title: "Packages",
     packages:[
         {
             id:'package-machupicchu',
-            title:'MACHU PICCHU & THE SECRET VALLEY OF INCAS 7 days Touring',
+            title:'DISFRUTA LA AVENTURA DE CONOCER MACHU PICCHU & EL VALLE SECRETO DE LOS INCAS',
             shortTitle: 'MACHU PICCHU & THE SECRET VALLEY',
             subtitle:'',
             url_image:'images/tours/cuzco/machu_picchu_3_t.jpg',
