@@ -134,7 +134,7 @@ function getTourItinerary(itinerary) {
 			<div class="itienrary-item">
 				<div class="item-time">${ date }</div>
 				<div class="item-desc">
-					<p>${ itinerary[date] }</p>
+					<p>${ capitalize(itinerary[date]) }</p>
 					<div class="item-border"></div>
 				</div>
 			</div>
@@ -190,6 +190,13 @@ function getItineraryItems(cruisesdates) {
 
 function getText(en, es) {
 	return language === 'en' ? en : es;
+}
+/**
+ * Capitalize the first letter of any text given
+ * @param {String} str 
+ */
+function capitalize(str) {
+	return str.replace(new RegExp(`^${str[0]}`), str[0].toUpperCase());
 }
 
 function createModal(item) {

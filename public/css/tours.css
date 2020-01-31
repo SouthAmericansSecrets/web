@@ -33,7 +33,11 @@
     text-align: justify;
 }
 .tour-info{
-    min-height: 250px!important;
+    padding: 0;
+    padding-right: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 4px;
 }
 .tour-menu{
     background: rgb(189,249,142);
@@ -87,6 +91,8 @@
         display: block;
         margin: auto;
         float: none !important;
+        width: -webkit-fill-available;
+        height: auto;
     }
 }
 @media (max-width:320px){
@@ -135,10 +141,11 @@
 /* Different positions */
 
 .corner-ribbon.top-left{
-  top: 25px;
-  left: -30px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+    top: 39px;
+    left: -43px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 202px;
 }
 
 /* Colors */

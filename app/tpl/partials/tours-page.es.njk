@@ -1,13 +1,26 @@
  <div class="col-md-12">
 	<div class="row tour-container">
-		<div class="col-md-8 col-sm-12">
+		<div class="col-md-8 col-sm-12 white">
+			{% if data.certificates %}
+			<div class="certificate-info">
+				<h3>{{data.certificates.title}}</h3>
+				<div class="cert-imgs">
+					{% for im in data.certificates.images %}
+						<img src="{{im}}" alt="">
+					{% endfor %}
+				</div>
+				<p>{{data.certificates.description}}</p>
+			</div>
+			{% endif %}
+			<img class="article-image tour-image" src="{{data.url_image}}" alt="" width="100%">
 			<p class="text-justify">
-				<img class="article-image tour-image" style="background-image:url({{data.url_image}});" alt="" width="100%">
 				<div class="article-title">{{data.title}}</div>
 				<div class="article-subtitle">
 					{{data.subtitle}}
-			 	</div>
-				{{data.description}}
+				</div>
+				<p style="padding: 0 10px;">
+					{{data.description}}
+				</p>
 			</p>
 		</div>
 		<div class="col-md-4 hidden-sm hidden-xs">
@@ -16,7 +29,7 @@
 									 {% for item in data.tours %}
 									 <li><a href="#{{item.id}}">{{item.shortTitle}}</a></li>
 									 {% endfor %}
-									 <li><a href="#additional-info">Información Adicional</a></li>
+									 <li><a href="#additional-info">Additional Information</a></li>
 							 </ul>
 					 </div>
 		</div>
@@ -29,13 +42,15 @@
             		<div class="corner-ribbon top-left sticky orange shadow"><i class="fa fa-ship" aria-hidden="true"></i> Miembros de crucero</div>
         		{% endif %}
 					<p class="text-justify">
-								<img class="tour-image" style="background-image:url({{item.url_image}});" alt="">
+								<img class="tour-image" src="{{item.url_image}}" alt="">
 
 								<div class="article-title" id="{{item.id}}">{{item.title}}</div>
 						<div class="article-subtitle">
 								{{item.subtitle}}
 						</div>
-								{{item.description | safe}}
+						<p style="padding: 0 10px;">
+							{{item.description | safe}}
+						</p>
 					</p>
 					<div class="slick-autoplay">
 						{% for image in	item.gallery %}

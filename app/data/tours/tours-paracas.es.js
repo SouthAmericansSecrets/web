@@ -4,6 +4,16 @@ export default {
 		description: 'Paracas es sin duda es el más interesante de los atractivos de la costa sur del Perú y está situado idealmente como punto de partida de los viajeros a otros destinos en virtud del puerto maritimo San Martin y aeropuerto internacional recién terminado. La corriente de Humboldt desde antártida trae una fantástica riqueza marina que pone a Paracas como uno de los sitios mas ricos de flora y fauna marina de la costa peruana. Es la parada mas importante para los viajeros amantes de la naturaleza ademas Paracas esta considerado refugio de pinguinos de Humbold, delfines de nariz de botella, lobos marinos sudamericanos, ballenas y es el lugar de alimentacion de aves migratorios de la red emisferica.',
 		url_image: 'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210558/SAS/IslasBallestas1.jpg',
 		tab_title: "Paracas",
+		certificates: {
+			title: 'Certificados de excelencia',
+			description: 'South American Secrets se estableció en 2002 con la misión de crear experiencias memorables para todos los viajeros por igual. Dieciséis años después, ganamos el certificado de excelencia de Tripadvisor. Todos nuestros barcos tienen certificado de la EPA de EE. UU., Clasificado como emisiones ultrabajas. Nuestro cliente es la prioridad, cada cliente de viaje en barco está asegurado con Positiva Seguros',
+			images: [
+				'https://i.imgur.com/IExqZlq.png',
+				'https://i.imgur.com/ubh3oK0.jpg',
+				'https://i.imgur.com/Kb6zIzj.png',
+				'https://i.imgur.com/Tf6TuS0.jpg'
+			]
+		},
 		tours:[
 			{
 				id: 'islas-ballestas',
@@ -98,12 +108,13 @@ export default {
 				subtitle:'Excursiones de costa independientes desde el muelle de pisco ( Paracas)',
 				url_image:'images/tours/paracas/paracas_13.jpg',
 				description:`Aproveche la oportunidad de reservar su excursión costal directamente con nosotros y obtener el mejor precio. Nuestro consejero de tours estará más que feliz en responder todas sus preguntas y en buscar la disponibilidad de su solicitud, por favor siéntase libre de contactarnos.
+				<div class="include-text">
+				<p><strong >Nosotros ofrecemos, tours de media jornada o completa personalizada para su grupo y guiada por nuestro personal bilingüe.</strong></p>
+				
+				<p><strong >Disfrute una experiencia más íntima lejos de las multitudes, el equipo de South Americans Secrets se asegura de que todos los pasajeros vuelvan a su crucero seguros y a tiempo.</strong></p>
 
-				<h4 class="hightlight-letters"><strong>Nosotros ofrecemos, tours de media jornada o completa personalizada para su grupo y guiada por nuestro personal bilingüe.</strong></h4>
-				<br/>
-				<h4 class="hightlight-letters"><strong>Disfrute una experiencia más íntima lejos de las multitudes, el equipo de South Americans Secrets se asegura de que todos los pasajeros vuelvan a su crucero seguros y a tiempo.</strong></h4>
-				<br/>
-				<h4 class="hightlight-letters"><strong>Nosotros diseñamos las mejores excursiones costales basándonos en sus intereses y habilidades como observar la vida marina, caminar a través de antiguos recintos arqueológicos y visitar áreas naurales protegidas.</strong></h4>
+				<p><strong >Nosotros diseñamos las mejores excursiones costales basándonos en sus intereses y habilidades como observar la vida marina, caminar a través de antiguos recintos arqueológicos y visitar áreas naurales protegidas.</strong></p>
+				</div>
 				`,
 				additionalData:
 				{

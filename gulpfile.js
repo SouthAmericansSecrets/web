@@ -34,5 +34,5 @@ gulp.task("publish",["build"], function(callback) {
     branch: 'gh-pages',
     repo: 'https://github.com/SouthAmericansSecrets/web.git'
   },
-  function(err) { console.log("published in gh-pages");});
+  function(err) { console.log("published in gh-pages", err);});
 });

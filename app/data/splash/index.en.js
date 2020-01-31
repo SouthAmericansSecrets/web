@@ -94,9 +94,9 @@ export default [
             '8:45AM': 'drive to Pachacamac Earth or realms creator\'s Temple.',
             '9:45AM': 'touring around Archaeological sites Pachacamac.',
             '11:00AM': 'drive to the modern city of Lima Barranco Miraflores, Parque del Amor, coastline panoramic view, olive of San Isidro, visit unforgettable Inca Market.',
-            '1:30PM': 'visit traditional restaurants for lunch on your own.',
+            '1:30PM': 'visit a traditional restaurant for lunch on your own.',
             '2:30PM': 'drive to Lima City of Kings, palaces, cathedrals, underground catacombs of San Francisco.',
-            '4:30PM': 'end of Our service or return to shuttle bus stop.',
+            '4:30PM': 'end of Our service or return to the shuttle bus stop.'
         },
         include: {
             standard: ['English speaking Guide', '8 hours itinerary', 'Certified tourist bus ( air-conditioned bus ).']
@@ -141,12 +141,12 @@ export default [
                     }
                 },
                 itinerary: {
-                    '8:30AM': 'pickup from the main gate of Callao harbor or shuttle bus meeting point, Plaza San Miguel, Plaza Salaverry, Larcomar.',
-                    '8:45AM': 'drive to Pachacamac Earth or realms creator\'s Temple.',
-                    '9:45AM': 'touring around Archaeological sites Pachacamac.',
-                    '11:00AM': 'drive to the modern city of Lima Barranco Miraflores, Parque del Amor, coastline panoramic view, olive of San Isidro, visit unforgettable Inca Market.',
-                    '1:30PM': 'visit traditional restaurants for lunch on your own.',
-                    '2:30PM': 'return to the shuttle bus meeting point end of Our service.'
+                    '8:30AM': 'pickup from the main gate of Callao cruise terminal, or shuttle bus meeting point, Plaza San Miguel, plaza Salaverry, Larco Mar.',
+                    '9:00AM': 'visit Larco Museum',
+                    '10:00AM': 'drive to Lima, City of Kings, palaces, cathedrals, underground catacombs.',
+                    '11:30AM': 'drive to the modern city of Lima Miraflores, Huaca Pucllana (Archaeological sites), San Isidro, Inca Market. Panoramic view coastline.',
+                    '1:30PM': 'visit a traditional restaurant for lunch on your own.',
+                    '2:30PM': 'return to shuttle bus meeting point end of Our service.',
                 },
                 include: {
                     standard: ['English speaking Guide', '6 hours itinerary', 'Certified tourist bus ( air-conditioned bus ).']

@@ -90,13 +90,13 @@ export default [
             }
         },
         itinerary: {
-            '8:30AM': 'Traslado desde la puerta principal del puerto de Callao o en el punto de encuentro del autobús lanzadera, Plaza San Miguel, Plaza Salaverry, Larcomar.',
-            '8:45AM': 'conduzca a Pachacamac Earth o al templo del creador de los reinos.',
-            '9:45AM': 'recorriendo los sitios arqueológicos de Pachacamac.',
-            '11:00AM': 'conduzca a la moderna ciudad de Lima, Barranco Miraflores, Parque del Amor, vista panorámica de la costa, oliva de San Isidro, visite el inolvidable Mercado Inca.',
-            '1:30PM': 'Visite los restaurantes tradicionales para almorzar por su cuenta.',
-            '2:30PM': 'conducir a la ciudad de reyes de Lima, palacios, catedrales, catacumbas subterráneas de San Francisco.',
-            '4:30PM': 'fin de nuestro servicio o regreso a la parada del autobús.',
+            '8:30AM': 'Traslado desde la puerta principal del puerto de Callao o punto de encuentro del autobús lanzadera, Plaza San Miguel, Plaza Salaverry, Larcomar',
+            '8:45AM': 'Viaje en auto a la Tierra de Pachacamac o al Templo del creador de los reinos',
+            '9:45AM': 'recorriendo los sitios arqueológicos de Pachacamac',
+            '11:00AM':'Viaje en auto a la moderna ciudad de Lima Barranco Miraflores, Parque del Amor, vista panorámica de la costa, oliva de San Isidro, visitar el inolvidable Mercado Inca.',
+            '1:30PM': 'visite un restaurante tradicional para almorzar por su cuenta',
+            '2:30PM': 'Viaje en auto a la ciudad de reyes de Lima, palacios, catedrales, catacumbas subterráneas de San Francisco',
+            '4:30PM': 'fin de nuestro servicio o regreso a la parada del autobús de enlace',
         },
         include: {
             standard: ['Guía bilingüe', 'itinerario de 8 horas', 'Autobús turístico certificado (autobús con aire acondicionado).']
@@ -141,12 +141,12 @@ export default [
                     }
                 },
                 itinerary: {
-                    '8:30AM': 'Traslado desde la puerta principal del puerto de Callao o en el punto de encuentro del autobús lanzadera, Plaza San Miguel, Plaza Salaverry, Larcomar.',
-                    '8:45AM': 'conduzca a Pachacamac Earth o al templo del creador de los reinos.',
-                    '9:45AM': 'recorriendo los sitios arqueológicos de Pachacamac.',
-                    '11:00AM': 'conduzca a la moderna ciudad de Lima, Barranco Miraflores, Parque del Amor, vista panorámica de la costa, oliva de San Isidro, visite el inolvidable Mercado Inca.',
-                    '1:30PM': 'Visite los restaurantes tradicionales para almorzar por su cuenta.',
-                    '2:30PM': 'regreso al punto de encuentro del autobús de enlace final de nuestro servicio.'
+                    '8:30 AM': 'traslado en la puerta principal de la terminal de cruceros del Callao, o en el punto de encuentro del autobús lanzadera, Plaza San Miguel, plaza Salaverry, Larco Mar',
+                    '9:00 AM': 'visitar el museo Larco',
+                    '10: 00AM ':' Viaje en auto a Lima, Ciudad de los Reyes, palacios, catedrales, catacumbas subterráneas ',
+                    '11: 30AM ':' Viaje en auto a la moderna ciudad de Lima Miraflores, Huaca Pucllana (sitios arqueológicos), San Isidro, Mercado Inca. Vista panorámica de la costa. ',
+                    '1:30 PM': 'visite un restaurante tradicional para almorzar por su cuenta',
+                    '2:30 PM': 'regreso al punto de encuentro del autobús de enlace al final de nuestro servicio'
                 },
                 include: {
                     standard: ['Guía bilingüe', 'itinerario de 6 horas', 'Autobús turístico certificado (autobús con aire acondicionado).']

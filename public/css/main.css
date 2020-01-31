@@ -10,10 +10,12 @@
     font-size: 18px;
     /*font-weight: bold;*/
     font-family: JungleFeverRegular;
+    padding: 0 10px;
 }
 .article-subtitle{
     font-size: 16px;
     font-weight: bold;
+    padding: 0 10px;
 }
 .article-image{
     background-position: center;

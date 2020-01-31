@@ -1,14 +1,27 @@
  <div class="col-md-12">
 
 	<div class="row tour-container">
-		<div class="col-md-8 col-sm-12">
+		<div class="col-md-8 col-sm-12 white">
+			{% if data.certificates %}
+			<div class="certificate-info">
+				<h3>{{data.certificates.title}}</h3>
+				<div class="cert-imgs">
+					{% for im in data.certificates.images %}
+						<img src="{{im}}" alt="">
+					{% endfor %}
+				</div>
+				<p>{{data.certificates.description}}</p>
+			</div>
+			{% endif %}
+			<img class="article-image tour-image" src="{{data.url_image}}" alt="" width="100%">
 			<p class="text-justify">
-				<img class="article-image tour-image" style="background-image:url({{data.url_image}});" alt="" width="100%">
 				<div class="article-title">{{data.title}}</div>
 				<div class="article-subtitle">
 					{{data.subtitle}}
-			 	</div>
-				{{data.description}}
+				</div>
+				<p style="padding: 0 10px;">
+					{{data.description}}
+				</p>
 			</p>
 		</div>
 		<div class="col-md-4 hidden-sm hidden-xs">
@@ -24,73 +37,75 @@
 	</div>
 
 
-    {% for item in data.tours %}
-     <div class="row tour-container  {{item.classes}}" >
-        <div class="col-md-8 tour-info">
+	{% for item in data.tours %}
+	 <div class="row tour-container  {{item.classes}}" >
+		<div class="col-md-8 tour-info">
 				{% if item.classes %}
-            		<div class="corner-ribbon top-left sticky orange shadow"><i class="fa fa-ship" aria-hidden="true"></i> Cruise members only</div>
-        		{% endif %}
-          <p class="text-justify">
-                <img class="tour-image" style="background-image:url({{item.url_image}});" alt="">
+					<div class="corner-ribbon top-left sticky orange shadow"><i class="fa fa-ship" aria-hidden="true"></i> Cruise members only</div>
+				{% endif %}
+		  <p class="text-justify">
+				<img class="tour-image" src="{{item.url_image}}" alt="">
 
-                <div class="article-title" id="{{item.id}}">{{item.title}}</div>
-            <div class="article-subtitle">
-                {{item.subtitle}}
-            </div>
-                {{item.description | safe}}
-          </p>
-          <div class="slick-autoplay">
-            {% for image in  item.gallery %}
-              <a href="{{image}}">
-                <img src="{{image}}" height="50px" width="50px"/>
-              </a>
-            {% endfor %}
-          </div>
-        </div>
-        <div class="col-md-4">
-            <div class="banner-right floating-right">
-            <div class="tour-detail">
-                {% if item.yacht %}
-                    <img src="images/{{item.yacht}}" align="right" width="60" style="margin-top: -22.5px; margin-right: -32.5px">
-                {% endif %}
-                {% if item.additionalData.activities %}
-                    <div class="tour-info-title">Activities</div>
-                    <ul>
-                    {% for activity in item.additionalData.activities %}
-                        <li>
-                        {{activity}}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
-                <div class="tour-info-title">Include</div>
-                <ul>
-                    {% for inc in item.additionalData.include %}
-                    <li>
-                    {{inc}}
-                    </li>
-                    {% endfor %}
-                </ul>
+				<div class="article-title" id="{{item.id}}">{{item.title}}</div>
+			<div class="article-subtitle">
+				{{item.subtitle}}
+			</div>
+			<p style="padding: 0 10px;">
+				{{item.description | safe}}
+			</p>
+		  </p>
+		  <div class="slick-autoplay">
+			{% for image in  item.gallery %}
+			  <a href="{{image}}">
+				<img src="{{image}}" height="50px" width="50px"/>
+			  </a>
+			{% endfor %}
+		  </div>
+		</div>
+		<div class="col-md-4">
+			<div class="banner-right floating-right">
+			<div class="tour-detail">
+				{% if item.yacht %}
+					<img src="images/{{item.yacht}}" align="right" width="60" style="margin-top: -22.5px; margin-right: -32.5px">
+				{% endif %}
+				{% if item.additionalData.activities %}
+					<div class="tour-info-title">Activities</div>
+					<ul>
+					{% for activity in item.additionalData.activities %}
+						<li>
+						{{activity}}
+						</li>
+					{% endfor %}
+					</ul>
+				{% endif %}
+				<div class="tour-info-title">Include</div>
+				<ul>
+					{% for inc in item.additionalData.include %}
+					<li>
+					{{inc}}
+					</li>
+					{% endfor %}
+				</ul>
 
-                <div class="tour-info-title">Not Include</div>
-                <ul>
-                    {% for inc in item.additionalData.notInclude %}
-                    <li>
-                    {{inc}}
-                    </li>
-                    {% endfor %}
-                </ul>
+				<div class="tour-info-title">Not Include</div>
+				<ul>
+					{% for inc in item.additionalData.notInclude %}
+					<li>
+					{{inc}}
+					</li>
+					{% endfor %}
+				</ul>
 
-                <div class="tour-info-title">Duration <small>{{ item.additionalData.duration.subtitle}}</small></div>
-                <ul>
-                    {% for inc in item.additionalData.duration.data %}
-                    <li>
-                    {{inc}}
-                    </li>
-                    {% endfor %}
-                </ul>
+				<div class="tour-info-title">Duration <small>{{ item.additionalData.duration.subtitle}}</small></div>
+				<ul>
+					{% for inc in item.additionalData.duration.data %}
+					<li>
+					{{inc}}
+					</li>
+					{% endfor %}
+				</ul>
 
-                <div class="tour-info-title">{{ "Base price:" if item.additionalData.price.base_price else "Price:" }} <small>{{ item.additionalData.price.currency}}{{item.additionalData.price.ammount}}{{' per hour' if item.additionalData.price.per_hour else ''}}</small></div>
+				<div class="tour-info-title">{{ "Base price:" if item.additionalData.price.base_price else "Price:" }} <small>{{ item.additionalData.price.currency}}{{item.additionalData.price.ammount}}{{' per hour' if item.additionalData.price.per_hour else ''}}</small></div>
 								<ul>
 										{% for inc in item.additionalData.price.data %}
 										<li>
@@ -98,57 +113,57 @@
 										</li>
 										{% endfor %}
 								</ul>
-                <button class="bttn-unite bttn-md bttn-warning" data-toggle="modal" data-target="#{{item.id}}-modal">Reserve Tour</button>
+				<button class="bttn-unite bttn-md bttn-warning" data-toggle="modal" data-target="#{{item.id}}-modal">Reserve Tour</button>
 
 <div class="share dropdown share-tours">
-    <button class="btn read-more dropdown-toggle" type="button" data-toggle="dropdown">
-       {{share}} <i class="fa fa-share" aria-hidden="true"></i>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-right">
-        <div id="share-buttons">
-            <a href="http://www.facebook.com/sharer.php?u={{uri}}#{{item.id}}" target="_blank">
-                <img src="images/facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://plus.google.com/share?url={{uri}}#{{item.id}}" target="_blank">
-                <img src="images/google.png" alt="Google" />
-            </a>
-            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{uri}}#{{item.id}}" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a href="http://reddit.com/submit?url={{uri}}#{{item.id}}&amp;title=South Americans Secrets" target="_blank">
-                <img src="images/reddit.png" alt="Reddit" />
-            </a>
-            <a href="https://twitter.com/share?url={{uri}}#{{item.id}}&amp;text=South%20Americans%20Secrets&amp;hashtags=southamericanssecrets" target="_blank">
-                <img src="images/twitter.png" alt="Twitter" />
-            </a>
-        </div> 
-    </ul>
+	<button class="btn read-more dropdown-toggle" type="button" data-toggle="dropdown">
+	   {{share}} <i class="fa fa-share" aria-hidden="true"></i>
+	</button>
+	<ul class="dropdown-menu dropdown-menu-right">
+		<div id="share-buttons">
+			<a href="http://www.facebook.com/sharer.php?u={{uri}}#{{item.id}}" target="_blank">
+				<img src="images/facebook.png" alt="Facebook" />
+			</a>
+			<a href="https://plus.google.com/share?url={{uri}}#{{item.id}}" target="_blank">
+				<img src="images/google.png" alt="Google" />
+			</a>
+			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{uri}}#{{item.id}}" target="_blank">
+				<img src="images/linkedin.png" alt="LinkedIn" />
+			</a>
+			<a href="http://reddit.com/submit?url={{uri}}#{{item.id}}&amp;title=South Americans Secrets" target="_blank">
+				<img src="images/reddit.png" alt="Reddit" />
+			</a>
+			<a href="https://twitter.com/share?url={{uri}}#{{item.id}}&amp;text=South%20Americans%20Secrets&amp;hashtags=southamericanssecrets" target="_blank">
+				<img src="images/twitter.png" alt="Twitter" />
+			</a>
+		</div> 
+	</ul>
 </div>
 
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div id="{{item.id}}-modal" class="rsv-modal-only modal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">{{item.form_title or item.title}}</h3>
-                    <div class="price-holder"><span class="form_price">{{item.additionalData.price.ammount}}{{item.additionalData.price.currency}}</span><span> per person</span></div>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" id="rsv-tour-info" class="rsv-tour-info" value="{{item.title}}" tour-id="{{item.id}}">
-                    <input type="hidden" id="rsv-lang" class="rsv-lang" value="en">
-                    <div class="reservation-subtitle">Tour reservation</div>
-                    <div class="form-inputs"><input type="text" class="rsv-input rsv-name" id="rsv-name" placeholder="Name*"></div>
-                    <div class="input-group date-input-group">
-                        <span class="input-group-addon">Date*</span>
-                        <input type="date" id="rsv-date" class="form-control rsv-date" name="date">
-                    </div>
-                    <div class="form-inputs"><input id="rsv-people" placeholder="N° people*" class="rsv-input rsv-people" type="number"></div>
-                    <div class="form-inputs"><input id="rsv-email" placeholder="Email*" class="rsv-input rsv-email" type="email"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div id="{{item.id}}-modal" class="rsv-modal-only modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">{{item.form_title or item.title}}</h3>
+					<div class="price-holder"><span class="form_price">{{item.additionalData.price.ammount}}{{item.additionalData.price.currency}}</span><span> per person</span></div>
+				</div>
+				<div class="modal-body">
+					<input type="hidden" id="rsv-tour-info" class="rsv-tour-info" value="{{item.title}}" tour-id="{{item.id}}">
+					<input type="hidden" id="rsv-lang" class="rsv-lang" value="en">
+					<div class="reservation-subtitle">Tour reservation</div>
+					<div class="form-inputs"><input type="text" class="rsv-input rsv-name" id="rsv-name" placeholder="Name*"></div>
+					<div class="input-group date-input-group">
+						<span class="input-group-addon">Date*</span>
+						<input type="date" id="rsv-date" class="form-control rsv-date" name="date">
+					</div>
+					<div class="form-inputs"><input id="rsv-people" placeholder="N° people*" class="rsv-input rsv-people" type="number"></div>
+					<div class="form-inputs"><input id="rsv-email" placeholder="Email*" class="rsv-input rsv-email" type="email"></div>
 					<div class="input-group">
 						<span class="input-group-addon">Payment Type*</span>
 						<select id="rsv-payment" class="form-control rsv-payment">
@@ -158,57 +173,57 @@
 							<option value="bank-transfer">Bank transfer</option>
 						</select>
 					</div>
-                    <div class="form-inputs"><textarea id="rsv-notes" class="rsv-notes" placeholder="Notes about your reservation"></textarea></div>
-                    <p id="rsv-warn" class="rsv-warn-regular rsv-warn rsv-warn-hidden">*Invalid request, you must fill all required fields*</p>
-                    <p id="rsv-warn-email" class="rsv-warn-email rsv-warn rsv-warn-hidden">*Invalid email address*</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" parent-modal="{{item.id}}-modal" id="request-reservation" class="request-reservation btn btn-default request-btn"><i class="fa fa-envelope-o" aria-hidden="true"></i>  Request Reservation</button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-          </div>
-        </div>
-    </div>
-    {% endfor %}
-    <!-- Modal -->
-    <div id="sent-reservation" class="modal" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title"><i class="fa fa-check" aria-hidden="true"></i> Request Sent</h3>
-                    <div class="price-holder"><span class="form_price">We will contact you soon</span></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default request-btn" data-dismiss="modal">Ok</button>
-                </div>
-          </div>
-        </div>
-    </div>
-    <hr/>
+					<div class="form-inputs"><textarea id="rsv-notes" class="rsv-notes" placeholder="Notes about your reservation"></textarea></div>
+					<p id="rsv-warn" class="rsv-warn-regular rsv-warn rsv-warn-hidden">*Invalid request, you must fill all required fields*</p>
+					<p id="rsv-warn-email" class="rsv-warn-email rsv-warn rsv-warn-hidden">*Invalid email address*</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" parent-modal="{{item.id}}-modal" id="request-reservation" class="request-reservation btn btn-default request-btn"><i class="fa fa-envelope-o" aria-hidden="true"></i>  Request Reservation</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+		  </div>
+		</div>
+	</div>
+	{% endfor %}
+	<!-- Modal -->
+	<div id="sent-reservation" class="modal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title"><i class="fa fa-check" aria-hidden="true"></i> Request Sent</h3>
+					<div class="price-holder"><span class="form_price">We will contact you soon</span></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default request-btn" data-dismiss="modal">Ok</button>
+				</div>
+		  </div>
+		</div>
+	</div>
+	<hr/>
  <div class="row additional-info">
-    <div class="col-md-12">
-       <h2 id="additional-info">Additional Information</h2>
-            <ul>
-                <li>All your personal information is required at the moment of your booking.</li>
-                <li>Confirmation of the excursion will be received at time of booking.</li>
-                <li>All tours are operated in English unless otherwise stated.</li>
-            </ul>
+	<div class="col-md-12">
+	   <h2 id="additional-info">Additional Information</h2>
+			<ul>
+				<li>All your personal information is required at the moment of your booking.</li>
+				<li>Confirmation of the excursion will be received at time of booking.</li>
+				<li>All tours are operated in English unless otherwise stated.</li>
+			</ul>
 
-            <h4>Travel voucher:</h4>
-            <ul>
-            <li>You will receive an electronic voucher via e mail once you booking is confirmed.</li>
-            <li>For each confirmed booking you are required to print your electronic voucher for presentation at the start of the excursion.</li>
-            <li>The electronic voucher acts a confirmation for all services you request.</li>
-            </ul>
+			<h4>Travel voucher:</h4>
+			<ul>
+			<li>You will receive an electronic voucher via e mail once you booking is confirmed.</li>
+			<li>For each confirmed booking you are required to print your electronic voucher for presentation at the start of the excursion.</li>
+			<li>The electronic voucher acts a confirmation for all services you request.</li>
+			</ul>
 
-            <h4>Local operator information:</h4>
-            <ul>
-            <li>We will send you complete operator information, including phone numbers at your destination.</li>
-            <li>Our managers select only the most experienced and reliable operators in each destination, removing the guesswork for you, and ensuring your peace of mind.</li>
-            </ul>
+			<h4>Local operator information:</h4>
+			<ul>
+			<li>We will send you complete operator information, including phone numbers at your destination.</li>
+			<li>Our managers select only the most experienced and reliable operators in each destination, removing the guesswork for you, and ensuring your peace of mind.</li>
+			</ul>
 
-    </div>
+	</div>
  </div>
 
 </div>
