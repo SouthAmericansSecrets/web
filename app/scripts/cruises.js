@@ -90,6 +90,7 @@ function createLayout(data) {
 		${getCruiseBody(data)}
 		<div class="cruise-itinerary">
 			<img src="${data.img.portrait}">
+			<div class="article-title hidden">${data.shortTitle}</div>
 			<div class="items">
 				<h3>${ itinerary }</h3>
 				${ getItineraryItems(data.cruisesdates) }

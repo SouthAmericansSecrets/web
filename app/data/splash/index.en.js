@@ -1,6 +1,7 @@
 export default [
     {
         id: 'shore-salaverry',
+        shortTitle: 'Shore excursions from Salaverry cruise terminal',
         title: 'Shore excursions to Chan Chan, the largest city of the pre-Columbian era in South America.',
         subtitle: 'from Salaverry cruise terminal',
         description: 'Live the amazing archeological experience of "the City of Eternal Spring", this tour takes you to visit the best places in Trujillo, with full assistance, English speaking tour guides and comfortable cars with air conditioning',
@@ -74,6 +75,7 @@ export default [
     {
         id: 'shore-excursion-lima-8h',
         title: 'Shore excursions to Pachacamac Archaeological sites, City of Kings & modern cosmopolitan metropolis, 8 hours',
+        shortTitle: 'Shore excursions from Callao cruise terminal',
         subtitle: 'from Callao cruise terminal',
         description: 'You are arriving on a cruise to Lima? we offer deluxe tours according to your time and requirements. Our Special Excursion It will take you to visit the best of Lima. The shore excursions include cars with air-conditioning, professional English speaking tour guides.',
         img: {
@@ -157,6 +159,7 @@ export default [
     {
         id: 'shore-paracas',
         title: 'Shore excursions to Islas Ballestas',
+        shortTitle: 'Shore excursions from TPP Pisco Paracas',
         subtitle: 'from TPP Pisco Paracas cruise terminal',
         description: 'We pick you up you directly from the port and personally escort you to Paracas dock. This round-trip tour of Peru\'s most famous islands lets you enjoy magnificent rocks formations sculpted by nature and is home of Humboldt penguins, south Americans sea lions and a multitude of marine birds. Services also available in First and Private classes.All yacht tours include a trained, certified, registered yatchsman and crewman/guide onboard. Our yacht services are insured and registered with all appropriate agencies as mandated by law.',
         img: {

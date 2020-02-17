@@ -9,7 +9,7 @@ export default {
 			description: 'South American Secrets se estableció en 2002 con la misión de crear experiencias memorables para todos los viajeros por igual. Dieciséis años después, ganamos el certificado de excelencia de Tripadvisor. Todos nuestros barcos tienen certificado de la EPA de EE. UU., Clasificado como emisiones ultrabajas. Nuestro cliente es la prioridad, cada cliente de viaje en barco está asegurado con Positiva Seguros',
 			images: [
 				'https://i.imgur.com/IExqZlq.png',
-				'https://i.imgur.com/ubh3oK0.jpg',
+ 
 				'https://i.imgur.com/Kb6zIzj.png',
 				'https://i.imgur.com/Tf6TuS0.jpg'
 			]
@@ -23,6 +23,12 @@ export default {
 				url_image:'https://res.cloudinary.com/dlia7phdx/image/upload/v1551210558/SAS/Paracas.jpg',
 				description:`Visitar estas islas es como participar de la filmacion de un documental de Nacional Geografic. Organizamos tours guiados desde nuestra oficina en Paracas, ó lo recojemos desde su hotel y nuestro personal le acompañará hasta el muelle de Paracas. Este viaje de ida y vuelta es de dos horas a las islas más famosas del Perú, le permite disfrutar de magníficas formaciones de rocas esculpidas por la naturaleza y es el hogar de los pingüinos de Humboldt, lobos marinos sudamericanos y una multitud de aves marinas. Estos servicios tambien estan disponibles en primera clase y servicios privados.`,
 				yacht: 'yacht.png',
+				certs: [
+					'https://i.imgur.com/IExqZlq.png',
+	 
+					'https://i.imgur.com/Kb6zIzj.png',
+					'https://i.imgur.com/Tf6TuS0.jpg'
+				],
 				gallery: [
 					'images/gallery/ballestas_01_t.jpg',
 					'images/gallery/ballestas_02_t.jpg',
@@ -69,6 +75,12 @@ export default {
 				url_image:'images/tours/paracas/ballestas10_t.jpg',
 				description:`Más libertad de movimiento y espacio para llevar equipos de cámara - nuestra opción de servicio de primera clase garantiza nuestro yate con asiento preferencial (2 asientos por persona) de su capacidad siempre habra lugar para cambiarse de sitio ó de posición.`,
 				yacht: 'yacht2.png',
+				certs: [
+					'https://i.imgur.com/IExqZlq.png',
+	 
+					'https://i.imgur.com/Kb6zIzj.png',
+					'https://i.imgur.com/Tf6TuS0.jpg'
+				],
 				gallery: [
 					'images/gallery/ballestas_13_t.jpg',
 					'images/gallery/ballestas_02_t.jpg',
@@ -162,6 +174,12 @@ export default {
 				description:`Lo recogemos directamente del puerto y lo escoltamos personalmente al muelle de paracas. Este viaje de 2 horas de las islas más famosas de Peru lo hará disfrutar de magnificas formaciones rocosas esculpidas por la naturaleza y es hogar de los pingüinos Humboldt, leones marinos sudamericanos y una multitud de aves marinas. los servicios también están disponibles en Primera clase y Privado. Todos los tours en yate incluyen un capitán capacitado, certificado y registrado y un guía a bordo. Nuestros servicios de yate están asegurados y registrados con todas las de la ley.<br/><br/>
 				Se comienza con el programa guíado a la reserva national de Paracas. Esta área natural es hogar de 224 especies de aves, alrededor de 180 peces y 20 especies de cetáceos. La reserva también ofrece maravillas historicas y culturales las cuales se hacen evidentes con los 114 recintos arqueológicos registrados y un testamento de la exitosa interacción de los antiguos habitantes de Paracas con el mar. La reserva de Paracas ha sido declarada un sitio Ramsar por la convención de los Humedales de importancia internacional en 1991. USted tendrá la oportunidad de explorar algunos de los fenómenos geológicos únicos de esta estrecha península, tales como vistas panorámicas, playas de arena blanca delineadas por coloridas formaciones rocosas de sedimento, aguas azules y turquesa y el suave y frío oleaje del Pacífico.`,
 				yacht: 'yacht.png',
+				certs: [
+					'https://i.imgur.com/IExqZlq.png',
+	 
+					'https://i.imgur.com/Kb6zIzj.png',
+					'https://i.imgur.com/Tf6TuS0.jpg'
+				],
 				gallery: [
 					'images/gallery/ballestas_01_t.jpg',
 					'images/gallery/ballestas_02_t.jpg',
@@ -204,6 +222,12 @@ export default {
 				classes: 'cruise-members-only',
 				description:`La opción de primera clase es la elección preferida de los pasajeros de crucero debido a sus amplios asientos que le da a los pasajeros más espacio para disfrutar de la vida marina en acción y tomar fotos cómodamente.`,
 				yacht: 'yacht2.png',
+				certs: [
+					'https://i.imgur.com/IExqZlq.png',
+	 
+					'https://i.imgur.com/Kb6zIzj.png',
+					'https://i.imgur.com/Tf6TuS0.jpg'
+				],
 				gallery: [
 					'images/gallery/ballestas_13_t.jpg',
 					'images/gallery/ballestas_02_t.jpg',
@@ -244,6 +268,12 @@ export default {
 				url_image:'images/tours/paracas/paracas_05_t.jpg',
 				description:`Salida en los horarios más convenientes para el cliente y disfrute con sus amigos y familiares. El tour privado es para aquellos que desean la exclusividad.Nuestro tour privado es, tambien asequible con los precios para grupos grandes.`,
 				yacht: 'yacht3.png',
+				certs: [
+					'https://i.imgur.com/IExqZlq.png',
+	 
+					'https://i.imgur.com/Kb6zIzj.png',
+					'https://i.imgur.com/Tf6TuS0.jpg'
+				],
 				gallery: [
 					'images/gallery/ballestas_05_t.jpg',
 					'images/gallery/ballestas_17_t.jpg',
@@ -283,6 +313,12 @@ export default {
 				url_image:'images/tours/paracas/ballestas_yacht_1_t.jpg',
 				description:`Chartee su propio yate y elija su propio plan de viaje con nosotros. Usted es libre de escoger para descubrir todas las islas de Paracas como mejor le parezca.`,
 				yacht: 'yacht3.png',
+				certs: [
+					'https://i.imgur.com/IExqZlq.png',
+	 
+					'https://i.imgur.com/Kb6zIzj.png',
+					'https://i.imgur.com/Tf6TuS0.jpg'
+				],
 				gallery: [
 					'images/gallery/ballestas_16_t.jpg',
 					'images/gallery/ballestas_15_t.jpg',

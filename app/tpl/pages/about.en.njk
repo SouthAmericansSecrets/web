@@ -6,21 +6,50 @@
                         <p class="snippet">South Americans' Secrets is a company focused on tourism and founded by expert guides of Peru.</p>
                         <p>We are the most versatile tour guides of the south coast of Peru and operate directly in Paracas, Nazca and Arequipa. We are also based in Cusco and ready to serve with professional staff dedicated to our customers and foreign travel agents. Our experienced and knowledgable staff carefully track each and every arrival and departure and respond to our customers' needs with confidence and courtesy.</p>
                         <p>South Americans' Secrets was established in 2002 with the mission to create memorable experiences for all travelers alike. Our goal is to build trust and friendship with our guests, with social and environmental responsibility that aims to achieve sustainable and inclusive tourism. We understand that succesful experiences are about listening to our customers' needs and desires including custom programs, private travel, fixed departures, regional activities and special interest tours.</p>
-                    </div>
+					</div>
 				</div>
-				<div class="col-md-4 hidden-sm" style="margin-top:15px">
-						<div class="banner-right floating-right">
-			 				<div class="tour-detail">
-					 			<div class="tour-info-title">South Americans' Secrets</div>
-								<div>
-						      <p><b>Agencia de turismo y Operador de Tours</b></p>
-						      <p><b>Amarilis Pereda & Lucio Hancco</b></p>
-						      <p>Cal. Camino Real Mz D lt. 8 San Andrés</p>
-							  <p>En la Marina Turística, a un lado del Hotel San Agustín - Paracas. Abierto desde las 7:30 am hasta la 1:00 pm (Paracas)</p>
-						      <p><b>Cel:</b>+51 956-481-002 / +51 947-058-508</p>
-						    </div>
-		 					</div>
-			 			</div>
-				 </div>
+				<div class="col-md-4 hidden-sm info-box">
+					<div class="banner-right floating-right info-body">
+						<div class="mobile-only">
+							<i class="fas fa-info-circle"></i>
+						</div>
+						 <div class="tour-detail">
+							 <div class="tour-info-title">South Americans' Secrets</div>
+							<div>
+							<p><b>Tourism Agency and Tour Operator</b></p>
+							<p><b>Amarilis Pereda & Lucio Hancco</b></p>
+							<p>St. Camino Real Mz D lt. 8 San Andrés</p>
+							<p>Inside Marina Turística "Tourist Pier", right next to Hotel San Agustín - Paracas. Open 7:30 am to 1:00 pm (Paracas)</p>
+							<p><b>Cel:</b>+51 956-481-002 / +51 947-058-508</p>
+						</div>
+						<div class="collaborators">
+							<h3>Our team</h3>
+							<div>
+								{% for col in data.collaborators %}
+									<div class="coll-item">
+										<p>{{col.name}}</p>
+										<span>{{col.rol}}</span>
+									</div>
+								{% endfor %}
+							</div>
+						</div>
+						 </div>
+					 </div>
+			 </div>
+			 <div class="info-wrapper"></div>
 		 </div>
+		 <div class="row tour-container">
+			<h3 class="title-black">{{data.title}}</h3>
+			<div class="col-md-8 col-sm-12 certificate-info">
+				<div class="bg-imgs">
+					
+				</div>
+				<div class="cert-imgs">
+					{% for im in data.images %}
+						<img src="{{im}}" alt="">
+					{% endfor %}
+				</div>
+				<p>{{data.description}}</p>
+			</div>
+		</div>
 	</div>

@@ -24,3 +24,7 @@ that is vectors/contiguous tones but continues with Tumi theme
 - we need to host on github pages because it won't cost anything and we can also
 abuse cloudflare to get us https for free
 - continuous deployment on push to tag ( https://gist.github.com/domenic/ec8b0fc8ab45f39403dd )
+
+# Update 02-17-2020
+- Add Travis CI / CD
+- Remove gulp, it was using a deprecated version.

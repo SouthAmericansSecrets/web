@@ -2,6 +2,7 @@ export default [
     {
         id: 'shore-salaverry',
         title: 'Excursiones en tierra a Chan Chan, la ciudad más grande de la era precolombina en América del Sur.',
+        shortTitle: 'Excursiones en tierra desde terminal de cruceros, Salaverry',
         subtitle: 'desde terminal de cruceros, Salaverry',
         description: 'Vive la increíble experiencia arqueológica de "la ciudad de la eterna primavera", este recorrido te lleva a visitar los mejores lugares de Trujillo, con asistencia completa, guías turísticos de habla inglesa y cómodos autos con aire acondicionado.',
         img: {
@@ -74,6 +75,7 @@ export default [
     {
         id: 'shore-callao',
         title: 'Excursiones en tierra a Sitios arqueológicos de Pachacamac, Ciudad de los Reyes y metrópolis cosmopolita moderna, 8 horas',
+        shortTitle: 'Excursiones en tierra desde terminal de cruceros, Callao',
         subtitle: 'desde terminal de cruceros, Callao',
         description: 'Vas a llegar en un crucero a Lima? Ofrecemos tours de lujo de acuerdo a su tiempo y requerimientos. Nuestra Excursión Especial Te llevará a visitar lo mejor de Lima. Las excursiones en tierra incluyen autos con aire acondicionado, guías turísticos profesionales de habla inglesa.',
         img: {
@@ -157,6 +159,7 @@ export default [
     {
         id: 'shore-paracas',
         title: 'Excursiones en tierra a Islas Ballestas',
+        shortTitle: 'Excursiones en tierra desde Terminal portuario Paracas, Pisco',
         subtitle: 'desde Terminal portuario Paracas, Pisco',
         description: 'Descubra la Reserva Nacional de Paracas, un área natural que alberga algunos de los ecosistemas más raros del mundo y también uno de los desiertos más secos del planeta. Haga un viaje a las Islas Ballestas, un santuario de vida silvestre para la fauna marina y la fauna exótica e impresionante. Todos nuestros tours incluyen guías turísticos de habla inglesa y autos con aire acondicionado.',
         img: {

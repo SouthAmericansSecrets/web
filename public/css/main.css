@@ -69,6 +69,15 @@
     .article-body {
         padding: 0 10px;
     }
+    .mobile-hidden {
+        display: none;
+    }
+    div#whatapp-contact {
+        font-size: 18px !important;
+    }
+    div#whatapp-contact:hover {
+        right: 0 !important;
+    }
 }
 @media (max-width: 990px) {
      .container-article{
@@ -97,7 +106,6 @@
         margin-left: 0!important; 
         margin-right: 0!important; 
     }
-
 }
 
 div#yak-chat-embended {
@@ -125,6 +133,30 @@ div#tepago-area {
     color: #666666;
 }
 
-pretty-modal > .modal-box {
-    z-index: 1000;
+div#whatapp-contact {
+    position: fixed;
+    z-index: 200;
+    right: 0;
+    padding: 10px;
+    color: #ffff;
+    cursor: pointer;
+    top: 10px;
+    background: rgba(71, 151, 136, .7);
+    font-weight: bold;
+    font-size: 16px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5px;
+    border-radius: 2em 0 0 2em;
+    transition: all .3s ease;
+}
+
+div#whatapp-contact > * {
+    place-self: center;
+}
+
+div#whatapp-contact:hover {
+    transform: scale(1.2,1.2);
+    background: rgba(71, 151, 136, 1);
+    right: 10px;
 }

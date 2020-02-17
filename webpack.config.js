@@ -70,9 +70,7 @@ module.exports = {
 		"jquery": "jQuery"
 	},
 	plugins: [
-
 		new NunjucksWebpackPlugin({template: tpls}),
-
 		new CopyWebpackPlugin([
 			{from: 'public/css', to: 'css'},
 			{from: 'public/videos', to: 'videos'},
