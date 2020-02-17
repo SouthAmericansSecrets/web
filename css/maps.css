@@ -1,0 +1,39 @@
+.tour-map {
+    /**/
+}
+#tours-map-title-f {
+    font-size: 30px;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    margin: auto;
+    font-family: JungleFeverRegular;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+#map {
+    height: 460px;
+    margin: auto;
+    border-radius: 0 0 4px 4px;
+}
+.marker-image {
+    width: 100% !important;
+}
+#map .gm-style-iw {
+    width: 199px !important;
+    position: relative !important;
+    margin: auto !important;
+    top: 10px !important;
+    left: initial !important
+}
+@media (max-width:768px){
+    #tours-map-title-f {
+        width: 300px
+    }
+    #map {
+        width: 300px;
+        margin-bottom: 10px
+    }
+}
+.tour-map-title {
+    text-align: center
+}

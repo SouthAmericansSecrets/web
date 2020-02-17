@@ -1,0 +1,121 @@
+.banner-right{
+
+    margin-bottom: 20px;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    min-width: 280px;
+     transition: all .2s ease-in-out;
+}
+
+.floating-right{
+      position: relative;
+}
+.floating-left{
+        margin-left: -50px;
+}
+
+@media (max-width: 1040px) {
+    .floating-right{
+          margin-right: 0;
+    }
+    .floating-left{
+          margin-left: 0;
+    }
+}
+
+.banner-img{
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+}
+
+.banner-img .title-banner{
+    bottom: 10px;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px #898989;
+}
+
+.arequipa-tour{
+    background-image: url(../images/banners/arequipa.jpg);
+}
+.puno-tour{
+    background-image: url(../images/banners/puno_1_t.jpg);
+}
+.cuzco-tour{
+    background-image: url(../images/banners/cusco_1_t.jpg);
+}
+.ballestas-tour{
+    background-image: url(../images/banners/paracas_07_t.jpg);
+}
+.paracas-tour{
+    background-image: url(../images/banners/paracas_lacatedral.t.jpg);
+}
+
+
+
+.bike-activitie{
+    background-image: url(../images/banners/bike_paracas_3_t.jpg);
+}
+.kitesurf-activitie{
+    background-image: url(../images/banners/kitesurf_1_t.jpg);
+}
+.sandboard-activitie{
+    background-image: url(../images/banners/sandboard_1_t.jpg);
+}
+
+.nazca-lines {
+  background-image: url(../images/package/nazca_flights_03.jpg);
+}
+
+.banners{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 990px) {
+    .banners{
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 1135px) {
+    .banner-right{
+          margin-left: 10px;
+          margin-right: 10px;
+          flex: 1;
+    }
+}
+
+
+@media (max-width: 650px) {
+     .banners{
+        flex-direction: column;
+       flex-wrap: nowrap;
+
+    }
+}
+
+.banner-right > .gallery > figure .banner-img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.banner-right > .gallery > figure .banner-img{
+    transform: scale(1);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.banner-right  .gallery{
+    overflow: hidden;
+}

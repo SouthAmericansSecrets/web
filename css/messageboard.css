@@ -1,0 +1,217 @@
+@media (max-width: 767px){
+    .content-page[data-ref="messageboard"], .content-page[data-ref="reservations"]{
+        display: block;
+        flex-direction: initial
+    }
+    div#messageboard #message-list {
+        margin-top: 0px !important
+    }
+    div#messageboard, div#messageboard-settings {
+        padding-top: 10px
+    }
+}
+div#messageboard-settings {
+    padding-bottom: 10px
+}
+div#messageboard, div#messageboard-settings {
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.5)
+}
+div#messageboard-settings .email-list {
+    background-color: rgba(255, 255, 255, 0.4);
+    min-height: 100px;
+    padding: 20px 10px 0px 10px;
+    max-height: 80px;
+    max-width: 60%;
+    overflow: auto;
+    margin-bottom: 5px
+}
+div#messageboard-settings .add-email {
+    max-width: 60%
+}
+div#messageboard-settings .add-email .form-control, div#messageboard-settings .add-email .input-group-btn > .btn {
+    border-radius: 0px !important
+}
+div#messageboard-settings h4, div#messageboard-settings .checkbox {
+    color: rgba(255, 255, 255, 0.5)
+}
+div#messageboard-settings hr {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-top: 15px
+}
+div#messageboard-settings li.email-node span {
+    width: 50%;
+    display: inline-block
+}
+div#messageboard-settings li.email-node span:last-child {
+    color: rgba(0, 0, 0, 0.5)
+}
+div#messageboard-settings li.email-node span:last-child:hover {
+    color: black
+}
+div#messageboard-settings li.email-node span:last-child:active {
+    color: rgba(0, 0, 0, 0.3)
+}
+div#messageboard-settings button.go-back {
+    font-size: 16px;
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.85);
+    border-color: transparent;
+    border-radius: 0px;
+    margin-top: 5px
+}
+div#messageboard-settings button.go-back:active,
+div#messageboard-settings button.go-back:hover,
+div#messageboard-settings button.go-back:focus {
+    background-color: rgba(0, 0, 0, 0.589);
+    color: rgba(255, 255, 255, 0.897);
+    border-color: transparent;
+    outline: 0px
+}
+@media (max-width: 767px){
+    div#messageboard-settings .email-list,
+    div#messageboard-settings h4,
+    div#messageboard-settings .checkbox,
+    div#messageboard-settings .add-email {
+        max-width: 90%;
+        margin: auto
+    }
+    div#messageboard-settings h4 {
+        margin-bottom: 5px
+    }
+}
+.messageboard-header {
+    background-color: black;
+    color: white
+}
+.messageboard-header span {
+    float: right
+}
+/*input group inline*/
+.messageboard-header .input-group {
+    display: inline-table;
+    vertical-align: middle;
+}
+.messageboard-header .input-group-addon,
+.messageboard-header .input-group-btn,
+.messageboard-header .form-control {
+    width: auto !important;
+}
+.messageboard-header .form-control {
+    padding: 2px 3px;
+    height: auto
+}
+.messageboard-header input {
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white
+}
+.messageboard-header input:focus {
+    border-color: white
+}
+/*------------------*/
+.messageboard-header button {
+    border-radius: 0px;
+    padding: 2px 3px;
+    background-color: inherit;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white
+}
+.messageboard-header .btn-cog {
+    border: 0px !important;
+    margin-right: 20px
+}
+@media (max-width: 767px){
+    .messageboard-header .btn-cog {
+        margin-right: 5px
+    }
+}
+.messageboard-header button:hover, .messageboard-header button:active, .messageboard-header button:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white
+}
+.messageboard-header button:focus {
+    outline-color: white
+}
+.messageboard-header .btn-cog:focus {
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-width: 0.5px
+}
+div#messageboard #message-list, div#messageboard-settings settings{
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+div#messageboard #message-list .message-title {
+    margin: 1px 6px 0px 6px;
+}
+.message-title-header {
+    height: auto
+}
+.message-area {
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255,255,255,0.1);
+    height: 60px;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    margin: 0 15px;
+    padding: 5px 5px
+}
+
+.reservation-list .message-title {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(255,255,255,0.5)
+}
+.reservation-list .message-title span {
+    font-size: 11px
+}
+.reservation-list .rsv-wrapper {
+    margin-bottom: 5px
+}
+.reservation-list .message-wrapper {
+    margin: 0
+}
+.reservation-list .message-area {
+    height: 100px
+}
+.reservation-list span.message-area {
+    display: inline-table;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    height: auto
+}
+.reservation-list .reservation-label {
+    padding: 5px 5px;
+    margin: 0 15px
+}
+.reservation-list span.reservation-label {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    padding: 0px;
+    min-width: 100px
+}
+@media (max-width: 767px){
+    .reservation-list .message-area {
+        height: 40px
+    }
+    .reservation-list .message-wrapper {
+        padding-bottom: 5px
+    }
+    .reservation-list span.Correo-span {
+        min-width: 60px
+    }
+}
+/*Invalid email*/
+.settings-warn {
+    color: rgba(221, 118, 22, 0.678);
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 0px
+}
+.settings-warn-hidden {
+    visibility: hidden;
+    display: none
+}

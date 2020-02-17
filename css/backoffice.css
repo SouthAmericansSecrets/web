@@ -1,0 +1,37 @@
+div.secret-login {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(0,0,0,0.5);
+}
+div.secret-login * {
+    border-radius: 0
+}
+div.secret-login p {
+    margin-top: 5px;
+    text-align: center;
+    color: white
+}
+div.secret-login input {
+    margin-bottom: 5px
+}
+div.secret-login button {
+    color: white !important;
+    background-color: #f58220;
+    border-color: #e9af25 !important;
+    display: block;
+    margin: 10px auto 10px auto;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    line-height: 10px
+}
+div.secret-login .btn:hover, div.secret-login .btn:active {
+    background-color: transparent !important
+}
+div.secret-login .form-control {
+    display: block;
+    width: 90%;
+    height: 34px;
+    margin-left: 5%;
+    margin-right: 5%
+}

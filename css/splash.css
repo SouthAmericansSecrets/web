@@ -1,0 +1,128 @@
+pretty-modal .modal-wrapper {
+    max-width: 90% !important;
+}
+
+.splash-ad img{
+    width: 800px;
+    max-width: 100%;
+}
+
+pretty-modal .modal-body {
+    max-width: 90% !important;
+}
+
+pretty-modal .modal-title {
+    max-width: 90% !important;
+}
+
+.splash-ad {
+    position: relative;
+    overflow: auto;
+    border: 3px dashed #fff;
+    border-radius: 4px;
+}
+
+.img-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+    display: grid;
+}
+
+.img-wrapper > .splash-title {
+    place-self: start end;
+    padding-right: 15px;
+    color: orange;
+    max-width: 80%;
+}
+
+.best-seller {
+    position: absolute;
+    top: 18px;
+    left: -29px;
+    width: fit-content;
+    padding: 5px 25px;
+    background-color: orange;
+    transform: rotate(-45deg);
+    font-size: 16px;
+    z-index: 1;
+}
+
+.book-btn {
+    place-self: end center;
+    padding-bottom: 15px;
+    width: 40%;
+}
+
+.book-btn > pretty-button[type="danger"] > button {
+    background-color: orange;
+    border-color: orange;
+    width: -webkit-fill-available;
+    font-size: 22px;
+
+}
+
+.book-btn > pretty-button[type="danger"] > button:hover {
+    background-color: #ffbe47;
+    border-color: #ffbe47;
+}
+
+.splash-description {
+    width: 100%;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: end;
+    height: fit-content;
+    margin: auto;
+    color: #fff;
+    padding: 10px 1em;
+}
+
+.splash-title svg {
+    padding: 5px;
+    color: #fff;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    top: 5px;
+    z-index: 2;
+}
+
+.splash-pres {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen 
+  and (max-width: 500px) 
+  and (orientation: portrait) {
+    .splash-ad h2{
+        font-size: 18px;
+    }
+    .splash-ad h3 {
+        font-size: 16px;
+    }
+    .splash-ad {
+        padding: 0;
+        height: 80vh;
+    }
+    .splash-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .nav.navbar-nav
+    {
+        font-size: 12px !important;
+    }
+}

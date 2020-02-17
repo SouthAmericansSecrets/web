@@ -1,0 +1,219 @@
+header{
+    position: relative;
+    background-color: #101010;
+}
+header .title{
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    padding-left: 190px;
+    height: 84%;
+    padding-top: 69px;
+    background-color: rgba(0,0,0,.3);
+}
+header .title h1{
+     font: 50px 'JungleFeverRegular',sans-serif;
+     color: #FFF;
+     filter: alpha(opacity=40);
+    opacity: 1;
+    -moz-opacity: 0.4;
+    -khtml-opacity: 0.4;
+    margin:0;
+}
+header .title h2{
+    font-family: 'JungleFeverRegular';
+    color:orange;
+    margin:0;
+    opacity: 1;
+}
+.header-img{
+    background-position: top center;
+    background-size: cover;    
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+@media (max-width:990px){
+    header .title { 
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+     header .title { 
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+     header .title { 
+        font-size: 20px;
+    }
+}
+
+nav{
+   margin-bottom: 0!important;
+}
+nav.mainmenu{
+    padding: 0;
+}
+.arequipa-1{
+    background-image: url(../images/header/arequipa_1_p.jpg);
+}
+.arequipa-2{
+    background-image: url(../images/header/arequipa_2_p.jpg);
+}
+.machupicchu-1{
+    background-image: url(../images/header/machu_picchu_p.jpg);
+}
+.machupicchu-2{
+    background-image: url(../images/header/machu_picchu_p.2.jpg);
+}
+.nazca-1{
+    background-image: url(../images/header/nazca_p.1.jpg);
+}
+
+.bikeparacas-1{
+    background-image: url(../images/header/bike_paracas_1_p.jpg);
+}
+
+
+.dropdown-menu {
+	min-width: 200px;
+    background-color: #101010;
+}
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+    color: white;
+}
+.multi-column-dropdown {
+	list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: white;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #999;
+	background-color: #101010;
+}
+.navbar-brand{
+    display: none;
+}
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+    .navbar-inverse .navbar-text {
+        padding-left: 10px;
+    }
+    .navbar-brand{
+        display: inline-block;
+    }
+}
+
+
+
+.banner-right{
+    border-radius: 4px;
+    background-color: orange;
+}
+
+.banner-right .title{
+    font-family: JungleFeverRegular;
+    font-size: 20px;
+    opacity: .7;
+    text-align: center;
+    width: 100%;
+    padding:5px;
+}
+
+.banner-right .image-zoom{
+
+}
+
+.navbar-fixed-top .navbar-brand{
+    display: inline-block;
+}
+
+.logo{
+    position: absolute;
+    z-index: 101;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .logo{
+        width:100%;
+        padding:0;
+    }
+    .logo img{
+        height: 210px;
+    }
+     header .title { 
+        display: none;
+    }
+
+}
+/*trip advisor*/
+.navbar-right ul {
+    list-style: none
+}
+.TA_socialButtonDesktop {
+    margin: 13px 13px 0px 13px;
+    line-height: 13px
+}
+.TA_socialButtonIcon {
+    margin: 10px 13px;
+    border: 1px solid #f58220;
+    padding: 1px 2px;
+    border-radius: 2px
+}
+.TA_socialButtonIcon a {
+    font-size: 11px;
+    color: white
+}
+.TA_socialButtonIcon i {
+    color: #f58220;
+    font-size: 17px;
+    margin-right: 2px
+}
+.TA_socialButtonIcon span {
+    font-family: JungleFeverRegular
+}
+.TA_socialButtonMobile {
+    visibility: hidden;
+    display: none
+}
+@media (max-width: 680px) {
+    .TA_socialButtonIcon {
+        border: 0px
+    }
+    .TA_socialButtonDesktop {
+        visibility: hidden;
+        display: none
+    }
+    .TA_socialButtonMobile {
+        visibility: visible;
+        display: block
+    }
+}

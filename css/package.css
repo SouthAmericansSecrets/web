@@ -1,0 +1,15 @@
+.package-image {
+    float: left;
+    margin-right: 20px;
+    width: calc(248px * 1.2);
+    height: calc(348px * 1.2);
+}
+@media (max-width:768px){
+    .package-image {
+        margin: auto
+    }
+}
+.image-package-horizontal {
+    width: 304px;
+    height: 171px
+}

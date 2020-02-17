@@ -1,0 +1,193 @@
+@import 'bttn.min.css';
+@import 'main.css';
+@import 'banners.css';
+@import 'tours.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,body{
+    width: 100%;
+    height: 100vh;
+    overflow: visible;
+    font-family: 'Roboto', sans-serif;
+}
+.container-app{
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+#background-img{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+body, #background-img{
+    margin: 0px;
+    background: url("../images/background/tapestry.png") 0 -20px repeat-x,      url("../images/background/bird.png") 10px 70px no-repeat,      url("../images/background/monkey.png") 10px 370px no-repeat,      url("../images/background/spider.png") 10px 570px no-repeat,      -webkit-linear-gradient(top left, rgba(230,239,47,1) 0%, rgba(168,216,10,1) 18%, rgba(181,175,16,1) 39%, rgba(71,71,3,1) 77%, rgba(25,68,3,1) 97%) no-repeat;
+    background:
+    url("../images/background/tapestry.png") repeat-x,
+    url("../images/background/bird.png") 10px 70px no-repeat,
+    url("../images/background/monkey.png") 10px 370px no-repeat,
+    url("../images/background/spider.png") 10px 570px no-repeat,
+    -moz-linear-gradient(top left, rgba(230,239,47,1) 0%, rgba(168,216,10,1) 18%, rgba(181,175,16,1) 39%, rgba(71,71,3,1) 77%, rgba(25,68,3,1) 97%) no-repeat cover;
+    background:
+    url("../images/background/tapestry.png") repeat-x,
+    url("../images/background/bird.png") 10px 70px no-repeat,
+    url("../images/background/monkey.png") 10px 370px no-repeat,
+    url("../images/background/spider.png") 10px 570px no-repeat,
+    -o-linear-gradient(top left, rgba(230,239,47,1) 0%, rgba(168,216,10,1) 18%, rgba(181,175,16,1) 39%, rgba(71,71,3,1) 77%, rgba(25,68,3,1) 97%) no-repeat cover;
+    background:
+    url("../images/background/tapestry.png") repeat-x,
+    url("../images/background/bird.png") 10px 70px no-repeat,
+    url("../images/background/monkey.png") 10px 370px no-repeat,
+    url("../images/background/spider.png") 10px 570px no-repeat,
+    linear-gradient(to bottom right, rgba(230,239,47,1) 0%, rgba(168,216,10,1) 18%, rgba(181,175,16,1) 39%, rgba(71,71,3,1) 77%, rgba(25,68,3,1) 97%) no-repeat cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+@font-face {
+    font-family: JungleFeverRegular;
+    src: url(../fonts/junglefever.fevernf.otf);
+}
+
+
+
+.page{
+    /* width: 930px; */
+    position: relative;
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 20px;
+    padding-bottom: 4px;
+    margin-bottom: 46px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.padding-page{
+    padding-top: 120px;
+}
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    /*max-width: 1020px;*/
+}
+
+
+.slick-autoplay img {
+  border: none;
+  border-radius: 6px;
+}
+
+.slick-autoplay{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#language-span {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #language-span {
+    display: block;
+  }
+  #language-icon {
+    display: none;
+  }
+  .page {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+table.schedule th { background-color:rgba(0,0,0,0.5); color:rgba(255,255,255,0.5); text-align:left; padding:8px; }
+table.schedule tr { border-bottom:1px solid rgba(0,0,0,0.5); }
+table.schedule td { vertical-align: top; margin:0; border-bottom:1px solid rgba(0,0,0,0.5);  }
+table.schedule td { padding:8px; }
+table.schedule td:first-child { text-align:right; font-weight:bold; width:150px; }
+
+
+.ad {
+  margin: 4px;
+  z-index: 2;
+  /*font-family: sans-serif;*/
+  font-size: 11pt;
+  line-height: 20pt;
+  color: rgba(255,255,255,0.85);
+  text-shadow: 1px 1px 3px #000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.ad:hover {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
+
+/*these classes replace the former customizations on bootstrap.*/
+
+blockquote {
+  border-left: 5px solid rgba(255,255,255,0.15) !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #f58220;
+  font-family: JungleFeverRegular;
+}
+
+@media (min-width: 768px){
+  .navbar-inverse .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px
+  }
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 40px;
+}
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.navbar {
+  min-height: 40px;
+}
+/*
+.mobile-video::-webkit-media-controls {
+  display:none !important;
+}*/
+
+#mainmenu {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
