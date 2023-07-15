@@ -37,37 +37,37 @@ exports.default = [{
         standard: ['Entradas', 'Transportes', 'Guía bilingüe']
     },
     cruisesdates: [{
-        destination: 'Marina',
-        title: 'Oceania Cruises',
-        date: 'Enero 9, Jueves.'
-    }, {
-        destination: 'Volendam',
+        destination: 'MS ZAANDAM',
         title: 'Holland America',
-        date: 'Enero 15, Miercoles.'
+        date: 'Octubre 18, Miercoles.'
     }, {
-        destination: 'Silver Shadow',
+        destination: 'OCEANIA MARINA',
+        title: 'Oceania Cruises',
+        date: 'Diciembre 16, Sabado.'
+    }, {
+        destination: 'SILVER NOVA',
         title: 'Silver Sea',
-        date: 'Febrero 4, Martes.'
+        date: 'Diciembre 17, Domingo.'
     }, {
-        destination: 'Insignia',
-        title: 'Oceania Cruises',
-        date: 'Febrero 11, Martes.'
-    }, {
-        destination: 'Ms Zaandam',
-        title: 'Holland America',
-        date: 'Marzo 27, Viernes.'
-    }, {
-        destination: 'Seven Seas Navigator',
+        destination: 'SEVEN SEAS SPLENDOR',
         title: 'Regent Seven Seas',
-        date: 'Abril 26, Domingo.'
+        date: 'Diciembre 18, Lunes.'
     }, {
-        destination: 'Seven Seas Mariner',
-        title: 'Regent Seven Seas',
-        date: 'Noviembre 12, Jueves.'
+        destination: 'SILVER NOVA',
+        title: 'Silver Sea',
+        date: 'Diciembre 21, Jueves.'
     }, {
-        destination: 'Marina',
-        title: 'Oceania Cruises',
-        date: 'Diciembre 17, Jueves.'
+        destination: 'SILVER NOVA',
+        title: 'Silver Sea',
+        date: 'Enero 14, Domingo 2024.'
+    }, {
+        destination: 'NORWEGIAN SUN',
+        title: 'Norwegian Cruise',
+        date: 'Enero 15, Lunes 2024.'
+    }, {
+        destination: 'AZAMARA ONWARD',
+        title: 'Azamara Cruises',
+        date: 'Enero 16, Martes 2024.'
     }]
 }, {
     id: 'shore-callao',
@@ -97,7 +97,30 @@ exports.default = [{
     include: {
         standard: ['Guía bilingüe', 'itinerario de 8 horas', 'Autobús turístico certificado (autobús con aire acondicionado).']
     },
-    cruisesdates: [{ destination: "Marina ", title: "Oceania Cruises ", date: "Enero 8." }, { destination: "Volendam ", title: "Holland America ", date: "Enero 16, 17." }, { destination: "ISLAND PRINCESS ", title: "Princess Cruises ", date: "Enero 21, 22." }, { destination: "COSTA DELICIOZA ", title: "Costa Cruises ", date: "Enero 30." }, { destination: "Silver Shadow ", title: "Silver Sea ", date: "Febrero 5, 6." }, { destination: "Insignia ", title: "Oceania Cruises ", date: "Febrero 12." }, { destination: "MSC MAGNIFICA ", title: "MSC Cruises ", date: "Febrero 15." }, { destination: "BALMORAL ", title: "Fred. Olsen Cruises ", date: "Febrero 18." }, { destination: "QUEEN VICTORIA ", title: "Cunard ", date: "Marzo 5, 6." }, { destination: "MARINA ", title: "Oceania Cruises ", date: "Marzo 15." }, { destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Marzo 19." }, { destination: "Star ", title: "Norwegian Cruise Line ", date: "Marzo 20." }, { destination: "AZAMARA PURSUIT ", title: "Azamara Club Cruises ", date: "Marzo 23 (Lunes)." }, { destination: "Ms Zaandam ", title: "Holland America ", date: "Marzo 25, 26." }, { destination: "KONINGSDAM ", title: "Holland America ", date: "Abril 16." }, { destination: "Seven Seas Navigator ", title: "Regent Seven Seas ", date: "Abril 24, 25." }, { destination: "SEA PRINCESS ", title: "Princess Cruises ", date: "Agosto 3, 4. (Lunes)." }, { destination: "Westerdam ", title: "Holland America ", date: "Octubre 25." }, { destination: "Seven Seas Mariner ", title: "Regent Seven Seas ", date: "Noviembre 13, 14." }, { destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Noviembre 27." }, { destination: "PACIFIC PRINCESS ", title: "Princess Cruises ", date: "Diciembre 10, 11." }, { destination: "Marina ", title: "Oceania Cruises ", date: "Diciembre 18, 19." }],
+    cruisesdates: [
+            {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Agosto 27."},
+            {destination: "MS ZAANDAM", title: "Holland America ", date: "Octubre 20."},
+            {destination: "MS OOSTERDAM ", title: "Holland America ", date: "Noviembre 25."},
+            {destination: "SAPPHIRE PRINCESS ", title: "Princess Cruises ", date: "Diciembre 13."},
+            {destination: "OCEANIA MARINA ", title: "Oceania Cruises ", date: "Diciembre 17."},
+            {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Diciembre 18."},
+            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Diciembre 18."},
+            {destination: "SEVEN SEAS SPLENDOR ", title: "Regent Seven Seas ", date: "Diciembre 19."}, 
+            {destination: "SILVER NOVA ", title: "Silversea ", date: "Enero 15, 2024."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Enero 16, 2024."},
+            {destination: "SEABOURN QUEST ", title: "Seabourn ", date: "Enero 16, 2024."},
+            {destination: "AZAMARA ONWARD ", title: "Azamara Cruises ", date: "Enero 17, 2024."},
+            {destination: "SERENADE OF THE SEAS ", title: "Royal Caribbean ", date: "Enero 29, 2024."},
+            {destination: "AMADEA ", title: "Phoenix Reisen ", date: "Enero 31, 2024."},
+            {destination: "COSTA DELIZIOSA ", title: "Costa Cruises ", date: "Febrero 03, 2024."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Febrero 27, 2024."},
+            {destination: "SAPPHIRE PRINCESS ", title: "Princess Cruises ", date: "Marzo 23, 2024."},
+            {destination: "MS OOSTERDAM ", title: "Holland America ", date: "Marzo 24, 2024."},
+            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Marzo 30, 2024."},
+            {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Abril 11, 2024."},
+            {destination: "AMERA ", title: "Phoenix Reisen ", date: "Abril 12, 2024."},
+            {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Julio 25, 2024."}
+    ],
     extraTours: [{
         id: 'shore-excursion-lima',
         title: 'Excursiones en tierra a Museo Larco, ciudad de reyes y ciudad cosmopolita moderna Mercado Inca, Huaca Pucllana, 6 horas',
@@ -152,7 +175,20 @@ exports.default = [{
         standard: ['Limitado a 28 pasajeros', 'Entradas', 'Impuesto del puerto', 'Seguro personal en caso de heridas', 'Traslado ida y vuelta desde el puerto', 'Transportes', 'Guía bilingüe'],
         firstclass: ['Todas las características estándar', 'Limitado a 18 pasajeros', 'Doble asiento']
     },
-    cruisesdates: [{ destination: "Volendam ", title: "Holland America ", date: "Enero 18." }, { destination: "Island Princess ", title: "Princess Cruises ", date: "Enero 23." }, { destination: "Insignia ", title: "Oceania Cruises ", date: "Febrero 13." }, { destination: "Balmoral ", title: "Fred. Olsen Cruises ", date: "Febrero 17." }, { destination: "Marina ", title: "Oceania Cruises ", date: "Marzo 14." }, { destination: "Star ", title: "Norwegian Cruise Line ", date: "Marzo 19." }, { destination: "Azamara Pursuit ", title: "Azamara Club Cruises ", date: "Marzo 22." }, { destination: "Sea Princess ", title: "Princess Cruises ", date: "Agosto 5." }, { destination: "Seven Seas Mariner ", title: "Regent Seven Seas ", date: "Noviembre 15." }, { destination: "Coral Princess ", title: "Princess Cruises ", date: "Noviembre 29." }, { destination: "Pacific Princess ", title: "Princess Cruises ", date: "Diciembre 9." }, { destination: "Marina ", title: "Oceania Cruises ", date: "Diciembre 20." }],
+    cruisesdates: [
+            {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Agosto 29."},
+            {destination: "MS ZAANDAM ", title: "Holland America ", date: "Octubre 22."},
+            {destination: "MS OOSTERDAM ", title: "Holland America ", date: "Noviembre 28."},
+            {destination: "SAPPHIRE PRINCESS ", title: "Princess Cruises ", date: "Diciembre 15."},
+            {destination: "OCEANIA MARINA ", title: "Oceania Cruises ", date: "Diciembre 19."},
+            {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Diciembre 20."},
+            {destination: "SEVEN SEAS SPLENDOR ", title: "Regent Seven Seas ", date: "Diciembre 21."},
+            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Enero 17, 2024."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Enero 17, 2024."},
+            {destination: "SEABOURN QUEST ", title: "Seabourn ", date: "Enero 18, 2024."},
+            {destination: "SERENADE OF THE SEAS ", title: "Princess Cruises ", date: "Enero 28, 2024."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Febrero 26, 2024."}
+    ],
     extraTours: [{
         id: 'tambo-colorado',
         title: 'Excursiones en tierra a Tambo Colorado',
