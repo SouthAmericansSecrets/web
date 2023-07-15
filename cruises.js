@@ -32905,7 +32905,7 @@ _firebase2.default.initializeApp(config);
 
 var language = (0, _utils.getPageLanguage)('lng') || 'en';
 
-var itinerary = language === 'en' ? 'Cruise service 2020' : 'Servicio de cruseros 2020';
+var itinerary = language === 'en' ? 'Cruise service 2023' : 'Servicio de cruseros 2023';
 
 __webpack_require__(166)("./index." + language + '.js').then(function (res) {
 	try {
