@@ -17,8 +17,8 @@ exports.default = {
 	tab_title: "Paquetes",
 	packages: [{
 		id: 'package-mystery-south-coast',
-		title: 'Mysterios de la Costa Su',
-		shortTitle: 'Mysterios de la Costa Su',
+		title: 'Misterios de la Costa Sur',
+		shortTitle: 'Misterios de la Costa Sur',
 		subtitle: 'Lo mejor de la costa sur de Perú en dos días (una noche).',
 		url_image: 'images/package/nazca_spider.jpg',
 		description: 'Sobrevuele las enigmaticas lineas de Nazca, contemple la naturaleza y belleza de la Reserva Nacional de Paracas, marav\xEDllate con la abundante vida marina de las Islas Ballestas, prueba algunos de los mejores vinos de pisco en la regi\xF3n Ica, relajese con lo pintoresco de un oasis en el desierto despu\xE9s de un emocionante paseo en tubular sobre las dunas monta\xF1osas y alrededores.',
