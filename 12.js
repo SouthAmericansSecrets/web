@@ -40,7 +40,7 @@ exports.default = {
 			recommendations: ['Traer crema solar, gafas de sol y una gorra.', 'Llevar ropa abrigadora o chaqueta lijera'],
 			price: {
 				currency: '$',
-				ammount: 28,
+				ammount: 25,
 				data: ['Hay descuentos para grupos']
 			}
 		}
@@ -199,7 +199,7 @@ exports.default = {
 			recommendations: ['Traer crema solar, gafas de sol y una gorra.', 'Lleve una botella de agua'],
 			price: {
 				currency: '$',
-				ammount: 30,
+				ammount: 29,
 				data: ['Se requiere un mínimo de 2 participantes']
 			}
 		}

@@ -40,7 +40,7 @@ exports.default = {
 			recommendations: ['Bring sun cream, sun glasses and a cap.', 'Bring warm clothing or wind-breaker.'],
 			price: {
 				currency: '$',
-				ammount: 28,
+				ammount: 25,
 				data: ['Group discounts available']
 			}
 		}
@@ -199,7 +199,7 @@ exports.default = {
 			recommendations: ['Bring sun cream, sun glasses and a cap.', 'Bring a bottle of water.'],
 			price: {
 				currency: '$',
-				ammount: 30,
+				ammount: 29,
 				data: ['A minimum of 2 participants are required']
 			}
 		}
