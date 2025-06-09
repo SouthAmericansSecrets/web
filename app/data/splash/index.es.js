@@ -58,17 +58,17 @@ export default [
             {
                 destination: 'SILVER NOVA',
                 title: 'Silver Sea',
-                date: 'Enero 14, Domingo 2024.'
+                date: 'Enero 14, Domingo 2026.'
             },
             {
                 destination: 'NORWEGIAN SUN',
                 title: 'Norwegian Cruise',
-                date: 'Enero 15, Lunes 2024.'
+                date: 'Enero 15, Lunes 2026.'
             },
             {
                 destination: 'AZAMARA ONWARD',
                 title: 'Azamara Cruises',
-                date: 'Enero 16, Martes 2024.'
+                date: 'Enero 16, Martes 2026.'
             },
         ]
     },
@@ -112,20 +112,20 @@ export default [
             {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Diciembre 18."},
             {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Diciembre 18."},
             {destination: "SEVEN SEAS SPLENDOR ", title: "Regent Seven Seas ", date: "Diciembre 19."}, 
-            {destination: "SILVER NOVA ", title: "Silversea ", date: "Enero 15, 2024."},
-            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Enero 16, 2024."},
-            {destination: "SEABOURN QUEST ", title: "Seabourn ", date: "Enero 16, 2024."},
-            {destination: "AZAMARA ONWARD ", title: "Azamara Cruises ", date: "Enero 17, 2024."},
-            {destination: "SERENADE OF THE SEAS ", title: "Royal Caribbean ", date: "Enero 29, 2024."},
-            {destination: "AMADEA ", title: "Phoenix Reisen ", date: "Enero 31, 2024."},
-            {destination: "COSTA DELIZIOSA ", title: "Costa Cruises ", date: "Febrero 03, 2024."},
-            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Febrero 27, 2024."},
-            {destination: "SAPPHIRE PRINCESS ", title: "Princess Cruises ", date: "Marzo 23, 2024."},
-            {destination: "MS OOSTERDAM ", title: "Holland America ", date: "Marzo 24, 2024."},
-            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Marzo 30, 2024."},
-            {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Abril 11, 2024."},
-            {destination: "AMERA ", title: "Phoenix Reisen ", date: "Abril 12, 2024."},
-            {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Julio 25, 2024."}
+            {destination: "SILVER NOVA ", title: "Silversea ", date: "Enero 15, 2026."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Enero 16, 2026."},
+            {destination: "SEABOURN QUEST ", title: "Seabourn ", date: "Enero 16, 2026."},
+            {destination: "AZAMARA ONWARD ", title: "Azamara Cruises ", date: "Enero 17, 2026."},
+            {destination: "SERENADE OF THE SEAS ", title: "Royal Caribbean ", date: "Enero 29, 2026."},
+            {destination: "AMADEA ", title: "Phoenix Reisen ", date: "Enero 31, 2026."},
+            {destination: "COSTA DELIZIOSA ", title: "Costa Cruises ", date: "Febrero 03, 2026."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Febrero 27, 2026."},
+            {destination: "SAPPHIRE PRINCESS ", title: "Princess Cruises ", date: "Marzo 23, 2026."},
+            {destination: "MS OOSTERDAM ", title: "Holland America ", date: "Marzo 24, 2026."},
+            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Marzo 30, 2026."},
+            {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Abril 11, 2026."},
+            {destination: "AMERA ", title: "Phoenix Reisen ", date: "Abril 12, 2026."},
+            {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Julio 25, 2025."}
         ],
         extraTours: [
             {
@@ -198,11 +198,11 @@ export default [
             {destination: "OCEANIA MARINA ", title: "Oceania Cruises ", date: "Diciembre 19."},
             {destination: "CELEBRITY ECLIPSE ", title: "Celebrity Cruises ", date: "Diciembre 20."},
             {destination: "SEVEN SEAS SPLENDOR ", title: "Regent Seven Seas ", date: "Diciembre 21."},
-            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Enero 17, 2024."},
-            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Enero 17, 2024."},
-            {destination: "SEABOURN QUEST ", title: "Seabourn ", date: "Enero 18, 2024."},
-            {destination: "SERENADE OF THE SEAS ", title: "Princess Cruises ", date: "Enero 28, 2024."},
-            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Febrero 26, 2024."}
+            {destination: "SILVER NOVA ", title: "Silver Sea ", date: "Enero 17, 2026."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Enero 17, 2026."},
+            {destination: "SEABOURN QUEST ", title: "Seabourn ", date: "Enero 18, 2026."},
+            {destination: "SERENADE OF THE SEAS ", title: "Princess Cruises ", date: "Enero 28, 2026."},
+            {destination: "NORWEGIAN SUN ", title: "Norwegian Cruise ", date: "Febrero 26, 2026."}
         ],
         extraTours: [
             {
