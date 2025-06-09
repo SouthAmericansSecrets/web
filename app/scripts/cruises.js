@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 
 let language = getPageLanguage('lng') || 'en' ;
 
-const itinerary = language === 'en' ? 'Cruise service 2023' : 'Servicio de cruseros 2023'
+const itinerary = language === 'en' ? 'Cruise service 2025' : 'Servicio de cruseros 2025'
 
 System.import(`../data/splash/index.${language}.js`).then((res) => {
 	try {
