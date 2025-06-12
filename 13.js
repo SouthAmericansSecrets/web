@@ -40,7 +40,7 @@ exports.default = {
 			recommendations: ['Bring sun cream, sun glasses and a cap.', 'Bring warm clothing or wind-breaker.'],
 			price: {
 				currency: '$',
-				ammount: 25,
+				ammount: 17,
 				data: ['Group discounts available']
 			}
 		}
