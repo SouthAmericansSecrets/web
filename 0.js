@@ -156,12 +156,10 @@ exports.default = [{
     },
     media: ['https://res.cloudinary.com/dvv4qgnka/image/upload/v1577998819/SAS/paracas_cruise_01.jpg', 'https://res.cloudinary.com/dvv4qgnka/image/upload/v1578271566/SAS/paracas_cruise_02.jpg'],
     price: {
-        standard: {
+        group: {
             amount: 100
         },
-        firstclass: {
-            amount: 135
-        }
+        
     },
     itinerary: {
         '09:00 AM': 'Traslado desde el puerto de San Martin',
@@ -172,8 +170,8 @@ exports.default = [{
         '03:00 PM': 'regreso al crucero final de nuestros servicios.'
     },
     include: {
-        standard: ['Limitado a 28 pasajeros', 'Entradas', 'Impuesto del puerto', 'Seguro personal en caso de heridas', 'Traslado ida y vuelta desde el puerto', 'Transportes', 'Guía bilingüe'],
-        firstclass: ['Todas las características estándar', 'Limitado a 18 pasajeros', 'Doble asiento']
+        group: ['Limitado a 28 pasajeros', 'Entradas', 'Impuesto del puerto', 'Seguro personal en caso de heridas', 'Traslado ida y vuelta desde el puerto', 'Transportes', 'Guía bilingüe'],
+        
     },
     cruisesdates: [
             {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "Agosto 29."},
