@@ -61,7 +61,7 @@ export default {
 					],
 					price: {
 						currency:'$',
-						ammount:28,
+						ammount:25,
 						data:[
 							 'Hay descuentos para grupos'
 						]
