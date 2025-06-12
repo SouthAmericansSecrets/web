@@ -157,10 +157,10 @@ exports.default = [{
     media: ['https://res.cloudinary.com/dvv4qgnka/image/upload/v1577998819/SAS/paracas_cruise_01.jpg', 'https://res.cloudinary.com/dvv4qgnka/image/upload/v1578271566/SAS/paracas_cruise_02.jpg'],
     price: {
         standard: {
-            amount: 85
+            amount: 100
         },
         firstclass: {
-            amount: 110
+            amount: 135
         }
     },
     itinerary: {
