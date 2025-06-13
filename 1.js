@@ -163,12 +163,9 @@ exports.default = [{
     },
     media: ['https://res.cloudinary.com/dvv4qgnka/image/upload/v1577998819/SAS/paracas_cruise_01.jpg', 'https://res.cloudinary.com/dvv4qgnka/image/upload/v1578271566/SAS/paracas_cruise_02.jpg'],
     price: {
-        standard: {
+        group: {
             amount: 100
         },
-        firstclass: {
-            amount: 135
-        }
     },
     itinerary: {
         '09:00 AM': 'pickup from San Martin harbor',
@@ -179,8 +176,7 @@ exports.default = [{
         '03:00 PM': 'return to Cruise ship end of our services.'
     },
     include: {
-        standard: ['Limeted to 28 participants ', 'All entrance fees', 'Harbor tax', 'Personal insurance in case of injuries', 'Pickup and dropoff directly from port/harbor', 'All transportation', 'English speaking guide'],
-        firstclass: ['All Standard Features', 'Limited to 18 guests', 'Double seating']
+        group: ['Limeted to 28 participants ', 'All entrance fees', 'Harbor tax', 'Personal insurance in case of injuries', 'Pickup and dropoff directly from port/harbor', 'All transportation', 'English speaking guide'],
     },
     cruisesdates: [
             {destination: "CORAL PRINCESS ", title: "Princess Cruises ", date: "August 29."},
