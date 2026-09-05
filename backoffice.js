@@ -284,7 +284,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Access your account</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Username\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Password\" required=\"required\">\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Login</button>\n    </div>\n</div>";
+output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Access your account</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Sign in with Google</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -333,7 +333,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Ingrese a su cuenta</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Nombre de usuario\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Contraseña\" required=\"required\">\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Iniciar sesión</button>\n    </div>\n</div>";
+output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Ingrese a su cuenta</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Iniciar sesión con Google</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -408,27 +408,34 @@ document.querySelector('#page-content').innerHTML = html;
 
 document.title = language == "es" ? "Iniciar sesión" : "Login";
 
-//Just for now, a hardcoded login
-function temporaryHardcodedLogin(usr, psw) {
-    if (usr == 'SouthAmericans' && psw == 'Secrets2026!') {
-        changeUriPath('messageboard.html');
+var firebaseConfig = {
+    apiKey: "AIzaSyADWQW2m0LOHMLhjbv27iQwQjVKLvIiqEw",
+    authDomain: "secrets-74e91.firebaseapp.com",
+    databaseURL: "https://secrets-74e91.firebaseio.com",
+    projectId: "secrets-74e91"
+};
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+}
+
+function showLoginError(msg) {
+    var el = document.getElementById("backoffice-login-error");
+    if (el) {
+        el.textContent = msg;
+        el.style.display = "block";
     }
 }
 
-//Login on enter
-document.getElementById("backoffice-password").addEventListener("keypress", function (e) {
-    if (e.which == 13) {
-        e.preventDefault();
-        document.getElementById("backoffice-login-button").click();
-    }
-});
-
-//Get username & password
-document.getElementById("backoffice-login-button").addEventListener("click", function () {
-    var username = document.getElementById("backoffice-username").value,
-        password = document.getElementById("backoffice-password").value;
-
-    temporaryHardcodedLogin(username, password);
+document.getElementById("backoffice-google-button").addEventListener("click", function () {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+        return firebase.database().ref('admins/' + result.user.uid).once('value');
+    }).then(function () {
+        changeUriPath('messageboard.html');
+    }).catch(function () {
+        firebase.auth().signOut();
+        showLoginError(language == "es" ? "No tienes autorización para acceder" : "You are not authorized to access this");
+    });
 });
 
 /***/ }),

@@ -26886,11 +26886,6 @@ var config = {
 }; // This import loads the firebase namespace along with all its type information.
 
 _firebase2.default.initializeApp(config);
-//DB auth
-_firebase2.default.auth().signInAnonymously().catch(function (error) {
-    console.log(error.code);
-    console.log(error.message);
-});
 
 var language = localStorage['lng'] || 'en';
 
@@ -26919,44 +26914,53 @@ var getDateByLang = function getDateByLang(lang, fecha) {
     return dte;
 };
 _firebase2.default.auth().onAuthStateChanged(function (user) {
-    //Load messages from firebase
-    var messages = _firebase2.default.database().ref('messages').orderByChild("timestamp").on('value', function (snapshot) {
-        var messagelist = document.getElementById("message-list");
-        while (messagelist.hasChildNodes()) {
-            messagelist.removeChild(messagelist.lastChild);
-        }
-        snapshot.forEach(function (childSnapshot) {
-            var key = childSnapshot.key;
-            var childData = childSnapshot.val();
+    if (!user || user.isAnonymous) {
+        changeUriPath('backoffice.html');
+        return;
+    }
+    _firebase2.default.database().ref('admins/' + user.uid).once('value').then(function () {
+        //Load messages from firebase
+        var messages = _firebase2.default.database().ref('messages').orderByChild("timestamp").on('value', function (snapshot) {
+            var messagelist = document.getElementById("message-list");
+            while (messagelist.hasChildNodes()) {
+                messagelist.removeChild(messagelist.lastChild);
+            }
+            snapshot.forEach(function (childSnapshot) {
+                var key = childSnapshot.key;
+                var childData = childSnapshot.val();
 
-            var fecha = new Date(childData.timestamp);
-            var dte = getDateByLang(language, fecha);
-            var name = childData.name;
-            var email = childData.email;
-            var message = childData.message;
+                var fecha = new Date(childData.timestamp);
+                var dte = getDateByLang(language, fecha);
+                var name = childData.name;
+                var email = childData.email;
+                var message = childData.message;
 
-            var title = document.createElement("div");
-            title.style.className = "message-title-header";
-            title.style.background = "rgba(0,0,0,0.4)";
-            title.style.color = "white";
-            title.innerHTML = "<p class='message-title'> " + dte + " <strong>" + name + "</strong> (" + email + ")" + (language == "es" ? " escribió" : " wrote") + ": </p>";
+                var title = document.createElement("div");
+                title.style.className = "message-title-header";
+                title.style.background = "rgba(0,0,0,0.4)";
+                title.style.color = "white";
+                title.innerHTML = "<p class='message-title'> " + dte + " <strong>" + name + "</strong> (" + email + ")" + (language == "es" ? " escribió" : " wrote") + ": </p>";
 
-            var msg = document.createElement("div");
-            msg.style.height = "80px";
-            msg.style.background = "rgba(0,0,0,0.4)";
-            msg.style.color = "white";
+                var msg = document.createElement("div");
+                msg.style.height = "80px";
+                msg.style.background = "rgba(0,0,0,0.4)";
+                msg.style.color = "white";
 
-            var messagearea = document.createElement("div");
-            messagearea.className = "message-area";
-            messagearea.innerHTML = message;
+                var messagearea = document.createElement("div");
+                messagearea.className = "message-area";
+                messagearea.innerHTML = message;
 
-            msg.appendChild(messagearea);
+                msg.appendChild(messagearea);
 
-            var item = document.createElement('div');
-            item.appendChild(title);
-            item.appendChild(msg);
-            messagelist.insertBefore(item, messagelist.childNodes[0]);
+                var item = document.createElement('div');
+                item.appendChild(title);
+                item.appendChild(msg);
+                messagelist.insertBefore(item, messagelist.childNodes[0]);
+            });
         });
+    }).catch(function () {
+        _firebase2.default.auth().signOut();
+        changeUriPath('backoffice.html');
     });
 });
 

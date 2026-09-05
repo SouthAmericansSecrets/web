@@ -26888,11 +26888,6 @@ var config = {
 }; // This import loads the firebase namespace along with all its type information.
 
 _firebase2.default.initializeApp(config);
-//DB auth
-_firebase2.default.auth().signInAnonymously().catch(function (error) {
-    console.log(error.code);
-    console.log(error.message);
-});
 
 var language = localStorage['lng'] || 'en';
 
@@ -26921,6 +26916,11 @@ var getDateByLang = function getDateByLang(lang, fecha) {
     return dte;
 };
 _firebase2.default.auth().onAuthStateChanged(function (user) {
+    if (!user || user.isAnonymous) {
+        changeUriPath('backoffice.html');
+        return;
+    }
+    _firebase2.default.database().ref('admins/' + user.uid).once('value').then(function () {
     //Load messages from firebase
     var messages = _firebase2.default.database().ref('reservations').orderByChild("timestamp").on('value', function (snapshot) {
         var messagelist = document.getElementById("message-list");
@@ -26986,6 +26986,10 @@ _firebase2.default.auth().onAuthStateChanged(function (user) {
             item.appendChild(msg);
             messagelist.insertBefore(item, messagelist.childNodes[0]);
         });
+    });
+    }).catch(function () {
+        _firebase2.default.auth().signOut();
+        changeUriPath('backoffice.html');
     });
 });
 

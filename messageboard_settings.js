@@ -31099,11 +31099,6 @@ var config = {
 // This import loads the firebase namespace along with all its type information.
 
 _firebase2.default.initializeApp(config);
-//DB auth
-_firebase2.default.auth().signInAnonymously().catch(function (error) {
-    console.log(error.code);
-    console.log(error.message);
-});
 
 var language = localStorage['lng'] || 'en';
 var tpl = language == 'es' ? _messageboardSettingsEs2.default : _messageboardSettingsEn2.default;
@@ -31111,20 +31106,22 @@ var html = tpl.render();
 document.title = "Messageboard settings";
 document.querySelector('#page-content').innerHTML = html;
 
-function singDB() {
-    _firebase2.default.auth().signInAnonymously().catch(function (error) {
-        console.log(error.code);
-        console.log(error.message);
-    });
-}
 function dostuffDb(cb) {
-    singDB();
     _firebase2.default.auth().onAuthStateChanged(function (user) {
-        cb(user);
+        if (!user || user.isAnonymous) {
+            changeUriPath('backoffice.html');
+            return;
+        }
+        _firebase2.default.database().ref('admins/' + user.uid).once('value').then(function () {
+            cb(user);
+        }).catch(function () {
+            _firebase2.default.auth().signOut();
+            changeUriPath('backoffice.html');
+        });
     });
 }
 function addMail(user, email) {
-    if (user) {
+    if (user && !user.isAnonymous) {
         // User is signed in.
         var isAnonymous = user.isAnonymous;
         var uid = user.uid;
