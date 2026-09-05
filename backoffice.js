@@ -432,8 +432,7 @@ document.getElementById("backoffice-google-button").addEventListener("click", fu
         return firebase.database().ref('admins/' + result.user.uid).once('value');
     }).then(function () {
         changeUriPath('messageboard.html');
-    }).catch(function (error) {
-        console.error("DEBUG login error:", error.code, error.message);
+    }).catch(function () {
         firebase.auth().signOut();
         showLoginError(language == "es" ? "No tienes autorización para acceder" : "You are not authorized to access this");
     });
