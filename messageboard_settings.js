@@ -30985,7 +30985,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-10 col-md-offset-1 col-sm-12\" id=\"messageboard-settings\">\n    <button onclick=\"changeUriPath('messageboard.html')\" class=\"btn go-back\">\n        <i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i> <strong>Go back</strong>\n    </button>\n    <div class=\"checkbox\">\n        <label><input id=\"isNotified\" type=\"checkbox\" value=\"\">Enable email notifications</label>\n    </div>\n    <hr>\n    <h4>Email List:</h4>\n    <div class=\"email-list\">\n        <ul id=\"email_list\">\n        </ul>\n    </div>\n    <div class=\"add-email\">\n        <div class=\"input-group\">\n            <input type=\"email\" class=\"form-control\" id=\"settings-email\" placeholder=\"example@example.com\">\n            <div class=\"input-group-btn\">\n                <button class=\"btn\" id=\"add-email-btn\" type=\"submit\">\n                    <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\n                </button>\n            </div>\n        </div>\n    </div>\n    <p id=\"settings-warn-email\" class=\"settings-warn settings-warn-hidden\">*Invalid email address*</p>\n</div>";
+output += "<div class=\"col-md-10 col-md-offset-1 col-sm-12\" id=\"messageboard-settings\">\n    <button onclick=\"changeUriPath('messageboard.html')\" class=\"btn go-back\">\n        <i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i> <strong>Go back</strong>\n    </button>\n    <button id=\"backoffice-logout-button\" class=\"btn go-back\">\n        <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> <strong>Log out</strong>\n    </button>\n    <div class=\"checkbox\">\n        <label><input id=\"isNotified\" type=\"checkbox\" value=\"\">Enable email notifications</label>\n    </div>\n    <hr>\n    <h4>Email List:</h4>\n    <div class=\"email-list\">\n        <ul id=\"email_list\">\n        </ul>\n    </div>\n    <div class=\"add-email\">\n        <div class=\"input-group\">\n            <input type=\"email\" class=\"form-control\" id=\"settings-email\" placeholder=\"example@example.com\">\n            <div class=\"input-group-btn\">\n                <button class=\"btn\" id=\"add-email-btn\" type=\"submit\">\n                    <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\n                </button>\n            </div>\n        </div>\n    </div>\n    <p id=\"settings-warn-email\" class=\"settings-warn settings-warn-hidden\">*Invalid email address*</p>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -31033,7 +31033,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-10 col-md-offset-1 col-sm-12\" id=\"messageboard-settings\">\n    <button onclick=\"changeUriPath('messageboard.html')\" class=\"btn go-back\">\n        <i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i> <strong>Regresar</strong>\n    </button>\n    <div class=\"checkbox\">\n        <label><input id=\"isNotified\" type=\"checkbox\" value=\"\">Activar notificaciones por correo</label>\n    </div>\n    <hr>\n    <h4>Lista de correos electrónicos:</h4>\n    <div class=\"email-list\">\n        <ul id=\"email_list\">\n        </ul>\n    </div>\n    <div class=\"add-email\">\n        <div class=\"input-group\">\n            <input type=\"email\" class=\"form-control\" id=\"settings-email\" placeholder=\"ejemplo@ejemplo.com\">\n            <div class=\"input-group-btn\">\n                <button class=\"btn\" id=\"add-email-btn\" type=\"submit\">\n                    <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\n                </button>\n            </div>\n        </div>\n    </div>\n    <p id=\"settings-warn-email\" class=\"settings-warn settings-warn-hidden\">*Dirección de correo electrónico inválida*</p>\n</div>";
+output += "<div class=\"col-md-10 col-md-offset-1 col-sm-12\" id=\"messageboard-settings\">\n    <button onclick=\"changeUriPath('messageboard.html')\" class=\"btn go-back\">\n        <i class=\"fa fa-arrow-left\" aria-hidden=\"true\"></i> <strong>Regresar</strong>\n    </button>\n    <button id=\"backoffice-logout-button\" class=\"btn go-back\">\n        <i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> <strong>Cerrar sesión</strong>\n    </button>\n    <div class=\"checkbox\">\n        <label><input id=\"isNotified\" type=\"checkbox\" value=\"\">Activar notificaciones por correo</label>\n    </div>\n    <hr>\n    <h4>Lista de correos electrónicos:</h4>\n    <div class=\"email-list\">\n        <ul id=\"email_list\">\n        </ul>\n    </div>\n    <div class=\"add-email\">\n        <div class=\"input-group\">\n            <input type=\"email\" class=\"form-control\" id=\"settings-email\" placeholder=\"ejemplo@ejemplo.com\">\n            <div class=\"input-group-btn\">\n                <button class=\"btn\" id=\"add-email-btn\" type=\"submit\">\n                    <i class=\"fa fa-plus\" aria-hidden=\"true\"></i>\n                </button>\n            </div>\n        </div>\n    </div>\n    <p id=\"settings-warn-email\" class=\"settings-warn settings-warn-hidden\">*Dirección de correo electrónico inválida*</p>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -31105,6 +31105,11 @@ var tpl = language == 'es' ? _messageboardSettingsEs2.default : _messageboardSet
 var html = tpl.render();
 document.title = "Messageboard settings";
 document.querySelector('#page-content').innerHTML = html;
+document.getElementById("backoffice-logout-button").addEventListener("click", function () {
+    _firebase2.default.auth().signOut().then(function () {
+        changeUriPath('backoffice.html');
+    });
+});
 
 function dostuffDb(cb) {
     _firebase2.default.auth().onAuthStateChanged(function (user) {

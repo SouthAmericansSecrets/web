@@ -26998,6 +26998,11 @@ __webpack_require__(177)("./reservations." + language + ".njk").then(function (m
     var tpl = m;
     var html = tpl.render({});
     board.innerHTML = html;
+    document.getElementById("backoffice-logout-button").addEventListener("click", function () {
+        _firebase2.default.auth().signOut().then(function () {
+            changeUriPath('backoffice.html');
+        });
+    });
 });
 
 function createThingy(labelText, contentText) {

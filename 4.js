@@ -25,7 +25,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-10 col-md-offset-1 col-sm-12 messageboard-header\">\n    <div class=\"row\">\n        <span>\n            <div class=\"input-group\">\n                <div class=\"input-group-btn\">\n                    <button class=\"btn\" type=\"submit\" onclick=\"changeUriPath('reservations.html')\">\n                        Ver reservaciones\n                    </button>\n                </div>\n            </div>\n        </span>\n        <span><button class=\"btn btn-cog\" onclick=\"changeUriPath('messageboard-settings.html')\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></button></span>\n        ";
+output += "<div class=\"col-md-10 col-md-offset-1 col-sm-12 messageboard-header\">\n    <div class=\"row\">\n        <span>\n            <div class=\"input-group\">\n                <div class=\"input-group-btn\">\n                    <button class=\"btn\" type=\"submit\" onclick=\"changeUriPath('reservations.html')\">\n                        Ver reservaciones\n                    </button>\n                </div>\n            </div>\n        </span>\n        <span><button class=\"btn btn-cog\" onclick=\"changeUriPath('messageboard-settings.html')\"><i class=\"fa fa-cog\" aria-hidden=\"true\"></i></button></span>\n        <span><button class=\"btn btn-cog\" id=\"backoffice-logout-button\"><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Cerrar sesión</button></span>\n        ";
 output += "\n    </div>\n</div>\n<div class=\"col-md-10 col-md-offset-1 col-sm-12\" id=\"messageboard\">\n    <div id=\"message-list\">\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
