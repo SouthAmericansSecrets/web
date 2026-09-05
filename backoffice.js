@@ -284,7 +284,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Access your account</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Sign in with Google</button>\n        <p style=\"margin:15px 0;\">or</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Email\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Password\" required=\"required\">\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Login</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
+output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Access your account</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Sign in with Google</button>\n        <p style=\"margin:15px 0;\">or</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Email\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Password\" required=\"required\">\n        <label style=\"font-weight:normal;margin-top:5px;\"><input type=\"checkbox\" id=\"backoffice-show-password\"> Show password</label>\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Login</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -333,7 +333,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Ingrese a su cuenta</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Iniciar sesión con Google</button>\n        <p style=\"margin:15px 0;\">o</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Correo electrónico\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Contraseña\" required=\"required\">\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Iniciar sesión</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
+output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Ingrese a su cuenta</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Iniciar sesión con Google</button>\n        <p style=\"margin:15px 0;\">o</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Correo electrónico\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Contraseña\" required=\"required\">\n        <label style=\"font-weight:normal;margin-top:5px;\"><input type=\"checkbox\" id=\"backoffice-show-password\"> Mostrar contraseña</label>\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Iniciar sesión</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -442,6 +442,10 @@ document.getElementById("backoffice-google-button").addEventListener("click", fu
     }).catch(function () {
         showLoginError(language == "es" ? "No tienes autorización para acceder" : "You are not authorized to access this");
     });
+});
+
+document.getElementById("backoffice-show-password").addEventListener("change", function () {
+    document.getElementById("backoffice-password").type = this.checked ? "text" : "password";
 });
 
 //Login on enter
