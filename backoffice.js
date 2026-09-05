@@ -461,10 +461,9 @@ document.getElementById("backoffice-login-button").addEventListener("click", fun
     var username = document.getElementById("backoffice-username").value,
         password = document.getElementById("backoffice-password").value;
 
-    firebase.auth().signInWithEmailAndPassword(username, password).then(function (result) {
-        afterSignIn(result.user.uid);
-    }).catch(function (error) {
-        console.error("DEBUG login error:", error.code, error.message);
+    firebase.auth().signInWithEmailAndPassword(username, password).then(function (user) {
+        afterSignIn(user.uid);
+    }).catch(function () {
         showLoginError(language == "es" ? "Usuario o contraseña incorrectos" : "Incorrect username or password");
     });
 });
