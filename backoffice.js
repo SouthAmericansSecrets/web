@@ -284,7 +284,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Access your account</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Sign in with Google</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
+output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Access your account</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Sign in with Google</button>\n        <p style=\"margin:15px 0;\">or</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Email\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Password\" required=\"required\">\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Login</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -333,7 +333,7 @@ var colno = 0;
 var output = "";
 try {
 var parentTemplate = null;
-output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Ingrese a su cuenta</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Iniciar sesión con Google</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
+output += "<div class=\"col-md-4 col-md-offset-4 secret-login\">\n    <div role=\"form\">\n        <p>Ingrese a su cuenta</p>\n        <button class=\"btn\" id=\"backoffice-google-button\" type=\"button\">Iniciar sesión con Google</button>\n        <p style=\"margin:15px 0;\">o</p>\n        <input type=\"text\" class=\"form-control\" id=\"backoffice-username\" placeholder=\"Correo electrónico\" required=\"required\">\n        <input type=\"password\" class=\"form-control\" id=\"backoffice-password\" placeholder=\"Contraseña\" required=\"required\">\n        <button class=\"btn\" id=\"backoffice-login-button\" type=\"submit\">Iniciar sesión</button>\n        <p id=\"backoffice-login-error\" style=\"display:none;color:#c0392b;margin-top:10px;\"></p>\n    </div>\n</div>";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
@@ -426,15 +426,41 @@ function showLoginError(msg) {
     }
 }
 
-document.getElementById("backoffice-google-button").addEventListener("click", function () {
-    var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth().signInWithPopup(provider).then(function (result) {
-        return firebase.database().ref('admins/' + result.user.uid).once('value');
-    }).then(function () {
+function afterSignIn(uid) {
+    firebase.database().ref('admins/' + uid).once('value').then(function () {
         changeUriPath('messageboard.html');
     }).catch(function () {
         firebase.auth().signOut();
         showLoginError(language == "es" ? "No tienes autorización para acceder" : "You are not authorized to access this");
+    });
+}
+
+document.getElementById("backoffice-google-button").addEventListener("click", function () {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+        afterSignIn(result.user.uid);
+    }).catch(function () {
+        showLoginError(language == "es" ? "No tienes autorización para acceder" : "You are not authorized to access this");
+    });
+});
+
+//Login on enter
+document.getElementById("backoffice-password").addEventListener("keypress", function (e) {
+    if (e.which == 13) {
+        e.preventDefault();
+        document.getElementById("backoffice-login-button").click();
+    }
+});
+
+//Get username & password
+document.getElementById("backoffice-login-button").addEventListener("click", function () {
+    var username = document.getElementById("backoffice-username").value,
+        password = document.getElementById("backoffice-password").value;
+
+    firebase.auth().signInWithEmailAndPassword(username, password).then(function (result) {
+        afterSignIn(result.user.uid);
+    }).catch(function () {
+        showLoginError(language == "es" ? "Usuario o contraseña incorrectos" : "Incorrect username or password");
     });
 });
 
